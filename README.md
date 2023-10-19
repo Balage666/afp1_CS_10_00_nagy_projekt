@@ -6,6 +6,7 @@
 + Tóth Dorina (FYA26Y)
 + Mizere Robin (D8KEON)
 + Kovácspál Bálint (Q0AM99)
++ Nagy Kristóf (GL66YI)
 
 
 ## Seniorok:
