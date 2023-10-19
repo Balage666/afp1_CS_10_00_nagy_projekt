@@ -6,3 +6,8 @@
 + Tóth Dorina (FYA26Y)
 + Mizere Robin (D8KEON)
 + Kovácspál Bálint (Q0AM99)
+
+
+## Seniorok:
+
++ Birinyi Gergő (FJ6Y69)
