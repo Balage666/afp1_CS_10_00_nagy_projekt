@@ -2,3 +2,4 @@
 
 ## Csapat tagok:
 + Sipos Valentin (JPCM1W) 
++ Mizere Robin (D8KEON)
