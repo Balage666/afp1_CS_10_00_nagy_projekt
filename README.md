@@ -14,3 +14,4 @@
 ## Seniorok:
 
 + Birinyi Gergő (FJ6Y69)
++ Karácsony Balázs (H8HYMB)
