@@ -10,7 +10,7 @@
 + Kinczel Ádám Gergő (CDYW8D)
 + Jaczina Norbert (GK12JT)
 
-
+Fasz kuki
 ## Seniorok:
 
 + Birinyi Gergő (FJ6Y69)
