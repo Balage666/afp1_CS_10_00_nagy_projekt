@@ -9,7 +9,7 @@
 + Nagy Kristóf (GL66YI)
 + Kinczel Ádám Gergő (CDYW8D)
 + Jaczina Norbert (GK12JT)
-
++ Pál József Gergő (NZM5MI3)
 
 ## Seniorok:
 
