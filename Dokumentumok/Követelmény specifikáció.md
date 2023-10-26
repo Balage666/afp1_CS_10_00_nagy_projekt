@@ -4,7 +4,7 @@
 
 Ez a dokumentum az Applikációfejlesztési folyamat-támogató alkalmazás követelmény specifikációját tartalmazza.
 Az alkalmazás célja, hogy segítse a cégeket egy alkalmazás fejlesztésének folyamatainak leegyszerűsítésében.
-Ennek érdekében az alkalmazás alfeladatokat jelöl ki, folyamatkövető rendszert alkot a projekthez.
+Ennek érdekében az alkalmazás alfeladatokat jelöl ki, folyamatkövető rendszert alkot a projekthez és el is készíti a teljes projektet minden szükséges melléklettel.
 Elkészíti a szükséges dokumentumokat, a követelményspecifikációt, funkcionális specifikációt és a rendszertervet.
 
 ## 7. Dokumentáció
