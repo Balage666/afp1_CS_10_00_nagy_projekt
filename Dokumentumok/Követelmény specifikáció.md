@@ -1,5 +1,12 @@
 # Követelmény specifikáció
 
+## 1. Bevezetés
+
+Ez a dokumentum az Applikációfejlesztési folyamat-támogató alkalmazás követelmény specifikációját tartalmazza.
+Az alkalmazás célja, hogy segítse a cégeket egy alkalmazás fejlesztésének folyamatainak leegyszerűsítésében.
+Ennek érdekében az alkalmazás alfeladatokat jelöl ki, folyamatkövető rendszert alkot a projekthez.
+Elkészíti a szükséges dokumentumokat, a követelményspecifikációt, funkcionális specifikációt és a rendszertervet.
+
 ## 7. Dokumentáció
 
 ### 7.1. Felhasználói kézikönyv
@@ -47,6 +54,7 @@ Tartalmazza az alkalmazás telepítéséhez és karbantartásához szükséges l
 
  * Be kell vezetni egy mechanizmust a felhasználóktól és a fejlesztőktől érkező visszajelzések gyűjtésére a dokumentációval kapcsolatban.
  * A dokumentációt rendszeresen felül kell vizsgálni és frissíteni az alkalmazás változásaihoz és a visszajelzésekhez képest.
+
 
 ## 6. Tesztelés
 
