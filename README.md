@@ -1,5 +1,7 @@
 # afp1_CS_10_00_nagy_projekt
 
+> A projekt python keretrendszerbe lesz meg írva és tartozni fog hozzá egy webes felület. API-on keresztül fog komunikálni a GPT nyelvimodelekkel.
+
 ## Csapat tagok:
 
 + Sipos Valentin (JPCM1W)
