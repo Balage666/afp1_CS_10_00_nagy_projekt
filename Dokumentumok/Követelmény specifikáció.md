@@ -62,3 +62,39 @@ Az alkalmazást tesztelni kell, hogy biztosítsa a megfelelő működését.
 
 ## 8. Végrehajtás
 Az alkalmazást 2024-01-01-ig kell befejezni.
+
+## 10. Felülvizsgálat
+
+Az alkalmazást rendszeresen felül kell vizsgálni, hogy biztosítsa, hogy megfelel a felhasználók igényeinek. A felülvizsgálat folyamatos folyamata elengedhetetlen az alkalmazás fejlesztése és működése szempontjából. Az alábbiakban bemutatok néhány fontos lépést és szempontot, amelyek segítenek a hatékony felülvizsgálati folyamatban:
+
+### 1.Felhasználói visszajelzések figyelembevétele:
+
+ * Felhasználói visszajelzések elemzése: Rendszeresen gyűjtsük és értékeljük ki a felhasználóktól érkező visszajelzéseket. Ezek a visszajelzések tartalmazhatnak hibajelentéseket, ötleteket, vagy panaszokat, amelyek alapján meghatározhatjuk az alkalmazás további fejlesztési irányait.
+
+ * Prioritizálás: Rangsoroljuk az összegyűjtött visszajelzéseket a fontosság és sürgősség szempontjából. Az olyan hibák, amelyek a felhasználók élményét komolyan befolyásolják, elsőbbséget élveznek.
+
+### 2.Tesztelés és hibajavítás:
+
+ * Hibajavítás: A felülvizsgálat során azonosított hibákat gyorsan és hatékonyan javítsuk ki. Ezzel megőrizhetjük az alkalmazás stabilitását és megbízhatóságát.
+
+ * Funkciók frissítése: Az új funkciók vagy fejlesztések bevezetése előtt alaposan teszteljük őket. Ez magába foglalja a funkcionalitás, a teljesítmény és az összeférhetőségi teszteket.
+
+### 3.Biztonság és adatvédelem:
+
+ * Adatvédelem ellenőrzése: Győződjünk meg arról, hogy az alkalmazás megfelel az adatvédelmi előírásoknak és a felhasználói adatok biztonságosan kezelik.
+
+ * Biztonsági frissítések: Kövessük a legfrissebb biztonsági trendeket és alkalmazzuk azokat a szükséges biztonsági frissítéseken.
+
+### 4.Teljesítményoptimalizálás:
+
+ * Teljesítményelemzés: Vizsgáljuk meg az alkalmazás teljesítményét, és azonosítsuk a lassulások és egyéb teljesítményproblémák okait.
+
+ * Optimalizálás: Azonosítottuk a teljesítményproblémákat, optimalizáljuk az alkalmazást, hogy gyorsabb és hatékonyabb legyen.
+
+### 5.E. Felhasználói tesztelés:
+
+ * Felhasználói csoportokkal való tesztelés: Végezzünk felhasználói teszteket a valós felhasználókkal, hogy megbizonyosodjunk arról, hogy az alkalmazás megfelel az igényeiknek és könnyen használható.
+
+ * Felhasználói visszajelzések begyűjtése: A tesztek során gyűjtsük be a felhasználói visszajelzéseket, és alkalmazzuk azokat az alkalmazás további javítására.
+
+ * Ezen lépések betartásával és a rendszeres felülvizsgálatokkal biztosíthatjuk, hogy az alkalmazás folyamatosan fejlődjön és kielégítse a felhasználók igényeit. Ne felejtsük el dokumentálni a felülvizsgálatok eredményeit, hogy nyomon követhessük az alkalmazás fejlődését és a javításokat.
