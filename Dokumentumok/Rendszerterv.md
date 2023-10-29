@@ -33,3 +33,20 @@ Az alkalmazást rendszeresen karban fogják tartani, hogy biztosítsa a megfelel
 Hibajavítások: Az alkalmazás hibáinak javítása.
 Új funkciók hozzáadása: Az alkalmazás új funkcióinak hozzáadása.
 Teljesítmény javítása: Az alkalmazás teljesítményének javítása.
+
+## 7. Dokumentáció
+
+Az alkalmazásnak megfelelő dokumentációval kell rendelkeznie, hogy a felhasználók könnyen meg tudják tanulni a használatát. 
+Az alkalmazás dokumentációjának rendelkezésre állása elengedhetetlen a felhasználók számára a hatékony és helyes használat, valamint az alkalmazás megértése szempontjából. 
+A dokumentáció segít a felhasználóknak az alkalmazás használatának elsajátításában, valamint a fejlesztőknek az alkalmazás architektúrájának és implementációjának megértésében. 
+A dokumentáció a következőket fogja tartalmazni:
++ Használati útmutató: Az alkalmazás használatára vonatkozó utasításokat tartalmazza.
+    - Telepítési útmutató: A felhasználók számára részletes lépéseket ad a telepítési folyamat során. Ez magában foglalja az alkalmazás letöltését, telepítését, és a szükséges konfigurációkat.
+    - Felhasználói felület leírása: Az alkalmazás felhasználói felületét részletesen bemutatja, és bemutatja az összes funkciót és műveletet, amelyeket a felhasználók használhatnak.
+    - Műveletek leírása: Az alkalmazás használatához szükséges műveleteket lépésről lépésre részletezi. Ide tartozik például az új projekt létrehozása, feladatok hozzáadása, és egyéb gyakori tevékenységek.
+    - Hibaelhárítás: Az esetleges hibák és problémák elhárítására szolgáló útmutatót tartalmaz, valamint ajánlásokat ad a felmerülő problémák megoldására.
++ Technikai dokumentáció: Az alkalmazás architektúráját és implementációját írja le.
+    - Architektúra leírása: Az alkalmazás architektúráját és komponenseit részletesen ismerteti. Ide tartozik az alkalmazás rétegeinek és komponenseinek leírása, valamint a kapcsolatok közöttük.
+    - Implementáció részletei: A technikai dokumentáció bemutatja az alkalmazás fejlesztési környezetét, a használt programozási nyelveket, keretrendszereket és adatbázisokat. Az implementáció részletezésével a fejlesztők könnyebben megérthetik az alkalmazás kódját és struktúráját.
+    - API dokumentáció: Ha az alkalmazásnak nyilvános vagy belső API-k vannak, a dokumentáció tartalmazza ezeknek a funkcióknak a leírását és használati útmutatóját.
+    - Adatmodell leírása: Az alkalmazás adatmodelljét és az adatbázissémáját részletesen ismerteti. Ide tartoznak az adatok tárolására és kezelésére vonatkozó információk.
