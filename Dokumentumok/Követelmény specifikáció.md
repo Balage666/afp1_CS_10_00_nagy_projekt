@@ -116,13 +116,13 @@ Az alkalmazást folyamatosan karban kell tartani, hogy biztosítsa a megfelelő 
 
  * Automatizált folyamatok: Az ismétlődő feladatokat automatizáljuk, hogy minimalizáljuk az emberi beavatkozást és csökkentsük a hibalehetőségeket.
 
-### 5.E. Mentések és visszaállítás:
+### 5.Mentések és visszaállítás:
 
  * Rendszeres mentések: Rendszeresen készítsünk teljes rendszermentéseket és adatbázismentéseket, hogy vissza tudjuk állítani az alkalmazást bármilyen rendellenes esemény esetén.
 
  * Visszaállítási terv: Legyen kész visszaállítási tervünk, amely meghatározza, hogy hogyan állítsuk vissza az alkalmazást a különböző vészhelyzetekben.
 
-### 6.F. Felhasználói támogatás:
+### 6.Felhasználói támogatás:
 
  * Felhasználók segítése: Nyújtsunk folyamatos technikai támogatást a felhasználóknak, hogy segítsünk megoldani az esetleges problémáikat és válaszoljunk a kérdéseikre.
 
@@ -158,7 +158,7 @@ Az alkalmazást rendszeresen felül kell vizsgálni, hogy biztosítsa, hogy megf
 
  * Optimalizálás: Azonosítottuk a teljesítményproblémákat, optimalizáljuk az alkalmazást, hogy gyorsabb és hatékonyabb legyen.
 
-### 5.E. Felhasználói tesztelés:
+### 5.Felhasználói tesztelés:
 
  * Felhasználói csoportokkal való tesztelés: Végezzünk felhasználói teszteket a valós felhasználókkal, hogy megbizonyosodjunk arról, hogy az alkalmazás megfelel az igényeiknek és könnyen használható.
 
