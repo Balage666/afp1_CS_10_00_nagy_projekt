@@ -88,3 +88,80 @@ Tartalmazza az alkalmazás telepítéséhez és karbantartásához szükséges l
 
 ## 8. Végrehajtás
 Az alkalmazást 2024-01-01-ig kell befejezni.
+
+## 9.Karbantartás
+Az alkalmazást folyamatosan karban kell tartani, hogy biztosítsa a megfelelő működését és az üzleti folyamatok zavartalan futását. A karbantartás elengedhetetlen az alkalmazás hosszú távú sikeréhez, és magában foglalja számos fontos lépést:
+
+### 1.Rendszeres frissítések:
+
+ * Operációs rendszer és alkalmazásfrissítések: Kövessük figyelemmel az operációs rendszer és az alkalmazások frissítéseit, és telepítsük a legújabb verziókat, hogy az alkalmazás a legstabilabb és legbiztonságosabb legyen.
+
+ * Biztonsági frissítések: Győződjünk meg róla, hogy a szoftver biztonsági réseit azonnal zárjuk be, és alkalmazzuk a megfelelő biztonsági frissítéseket, hogy megvédjük az alkalmazást a kibertámadásoktól.
+
+### 2.Adatbázis karbantartás:
+
+ * Adatbázis biztonság: Vigyázzunk az adatbázis biztonságára, és gondoskodjunk arról, hogy adataink védettek legyenek illetéktelen hozzáférés ellen.
+
+ * Adatbázis optimalizálás: Időről időre végezzünk adatbázis optimalizálást, hogy a lekérdezések gyorsak és hatékonyak legyenek.
+
+### 3.Monitorozás és teljesítményfigyelés:
+
+ * Monitorozó eszközök: Használjunk monitorozó eszközöket az alkalmazás teljesítményének és rendelkezésre állásának figyelésére. Ezek az eszközök lehetővé teszik a problémák korai azonosítását.
+
+ * Teljesítményelemzés: Rendszeresen elemezzük az alkalmazás teljesítményét, és azonosítsuk a lassulások és problémák okait. Ez segít abban, hogy időben reagáljunk a teljesítményproblémákra.
+
+### 4.Feladatok ütemezése:
+
+ * Feladatok és rutin karbantartás: Ütemezzük be a rendszeres karbantartási feladatokat, például az adatbázismentést, a logfájlok törlését és az indexek újraépítését.
+
+ * Automatizált folyamatok: Az ismétlődő feladatokat automatizáljuk, hogy minimalizáljuk az emberi beavatkozást és csökkentsük a hibalehetőségeket.
+
+### 5.Mentések és visszaállítás:
+
+ * Rendszeres mentések: Rendszeresen készítsünk teljes rendszermentéseket és adatbázismentéseket, hogy vissza tudjuk állítani az alkalmazást bármilyen rendellenes esemény esetén.
+
+ * Visszaállítási terv: Legyen kész visszaállítási tervünk, amely meghatározza, hogy hogyan állítsuk vissza az alkalmazást a különböző vészhelyzetekben.
+
+### 6.Felhasználói támogatás:
+
+ * Felhasználók segítése: Nyújtsunk folyamatos technikai támogatást a felhasználóknak, hogy segítsünk megoldani az esetleges problémáikat és válaszoljunk a kérdéseikre.
+
+ * Visszajelzések gyűjtése: Figyeljük meg a felhasználói visszajelzéseket és használjuk azokat a fejlesztések meghatározásához.
+
+ * A rendszeres karbantartás és a proaktív hozzáállás segít megelőzni a problémákat és biztosítani az alkalmazás zavartalan működését. Az idővel és az erőforrásokkal való gazdálkodás mellett az alkalmazás hosszú távú sikerét is biztosítja.
+
+## 10. Felülvizsgálat
+
+Az alkalmazást rendszeresen felül kell vizsgálni, hogy biztosítsa, hogy megfelel a felhasználók igényeinek. A felülvizsgálat folyamatos folyamata elengedhetetlen az alkalmazás fejlesztése és működése szempontjából. Az alábbiakban bemutatok néhány fontos lépést és szempontot, amelyek segítenek a hatékony felülvizsgálati folyamatban:
+
+### 1.Felhasználói visszajelzések figyelembevétele:
+
+ * Felhasználói visszajelzések elemzése: Rendszeresen gyűjtsük és értékeljük ki a felhasználóktól érkező visszajelzéseket. Ezek a visszajelzések tartalmazhatnak hibajelentéseket, ötleteket, vagy panaszokat, amelyek alapján meghatározhatjuk az alkalmazás további fejlesztési irányait.
+
+ * Prioritizálás: Rangsoroljuk az összegyűjtött visszajelzéseket a fontosság és sürgősség szempontjából. Az olyan hibák, amelyek a felhasználók élményét komolyan befolyásolják, elsőbbséget élveznek.
+
+### 2.Tesztelés és hibajavítás:
+
+ * Hibajavítás: A felülvizsgálat során azonosított hibákat gyorsan és hatékonyan javítsuk ki. Ezzel megőrizhetjük az alkalmazás stabilitását és megbízhatóságát.
+
+ * Funkciók frissítése: Az új funkciók vagy fejlesztések bevezetése előtt alaposan teszteljük őket. Ez magába foglalja a funkcionalitás, a teljesítmény és az összeférhetőségi teszteket.
+
+### 3.Biztonság és adatvédelem:
+
+ * Adatvédelem ellenőrzése: Győződjünk meg arról, hogy az alkalmazás megfelel az adatvédelmi előírásoknak és a felhasználói adatok biztonságosan kezelik.
+
+ * Biztonsági frissítések: Kövessük a legfrissebb biztonsági trendeket és alkalmazzuk azokat a szükséges biztonsági frissítéseken.
+
+### 4.Teljesítményoptimalizálás:
+
+ * Teljesítményelemzés: Vizsgáljuk meg az alkalmazás teljesítményét, és azonosítsuk a lassulások és egyéb teljesítményproblémák okait.
+
+ * Optimalizálás: Azonosítottuk a teljesítményproblémákat, optimalizáljuk az alkalmazást, hogy gyorsabb és hatékonyabb legyen.
+
+### 5.Felhasználói tesztelés:
+
+ * Felhasználói csoportokkal való tesztelés: Végezzünk felhasználói teszteket a valós felhasználókkal, hogy megbizonyosodjunk arról, hogy az alkalmazás megfelel az igényeiknek és könnyen használható.
+
+ * Felhasználói visszajelzések begyűjtése: A tesztek során gyűjtsük be a felhasználói visszajelzéseket, és alkalmazzuk azokat az alkalmazás további javítására.
+
+ * Ezen lépések betartásával és a rendszeres felülvizsgálatokkal biztosíthatjuk, hogy az alkalmazás folyamatosan fejlődjön és kielégítse a felhasználók igényeit. Ne felejtsük el dokumentálni a felülvizsgálatok eredményeit, hogy nyomon követhessük az alkalmazás fejlődését és a javításokat.
