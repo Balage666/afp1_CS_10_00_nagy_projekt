@@ -61,3 +61,7 @@ A dokumentáció a következőket fogja tartalmazni:
     - Implementáció részletei: A technikai dokumentáció bemutatja az alkalmazás fejlesztési környezetét, a használt programozási nyelveket, keretrendszereket és adatbázisokat. Az implementáció részletezésével a fejlesztők könnyebben megérthetik az alkalmazás kódját és struktúráját.
     - API dokumentáció: Ha az alkalmazásnak nyilvános vagy belső API-k vannak, a dokumentáció tartalmazza ezeknek a funkcióknak a leírását és használati útmutatóját.
     - Adatmodell leírása: Az alkalmazás adatmodelljét és az adatbázissémáját részletesen ismerteti. Ide tartoznak az adatok tárolására és kezelésére vonatkozó információk.
+
+## 8. Tervezett idővonal
+
+Az alkalmazást 2024-01-01-ig fogják befejezni.
