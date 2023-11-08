@@ -40,3 +40,14 @@ Az egyes funkciókhoz tartozó funkcionális követelmények a következők:
         + Prioritások: A prioritások részben meghatározzák, hogy mely követelményeknek van kiemelt fontossága a projekt során. Lehetőséget biztosítanak az elkészítőknek az alapvető és másodlagos követelmények megkülönböztetésére.
         + Határolások: A határolások részben meghatározzák az alkalmazás határait és az esetleges korlátozásokat. Ide tartozik például az alkalmazás támogatott platformjai, illetve az eszközök és technológiák, amelyekkel kompatibilis.
         + Megvalósítási feltételek: A megvalósítási feltételek rész tartalmazza azokat a kritikus elemeket, amelyekre a fejlesztőknek és a projekt csapatnak figyelniük kell a követelmények teljesítése során. Ez magában foglalhatja az erőforrások, a technikai specifikációk és a szükséges szoftvereket.
+
++ Rendszerterv generálás:
+    - Az alkalmazásnak képesnek kell lennie a rendszerterv generálására a funkcionális specifikációban megírt elvárások alapján.
+    - Ez a funkció nagyban megkönnyíti a várt rendszerkövetelmények előzetesen megállapítani a közelítőleges rendszerigényeket.
+    - A rendszerterv generálása segít a projekt céljainak és követelményeinek meghatározásában a rendszer létrehozásának vonzatában.
+    - A generált rendszerterv esetlegesen rávilágíthat segítséget nyújtó opciókra ,ezáltal a fejlesztés hatékonysága növekedhet és a végtermék minősőgét is pozitívan tudja befolyásolni.
+    - Az alkalmazásnak a rendszertervnek a következő elemeket kell tartalmaznia:
+        + Bevezetés: A bevezetés tartalmazza a rendszer általános leírását, összefoglalva az alábbi pontokat.
+        + Architektúra: Részletesen írja le a tervezett rendszer egyes felépítésbeli elemeit alpontokban specifikusan kifejtve
+        + Implementáció: A rendszer esetleges telepítési útmutatóját írja le, illetve azt, hogy a felhasználók hogyan érhetik el az alkalmazást a használat érdekében.
+        + Tesztelés: A fejlesztés közben szükség van tesztek végzésére, hogy ellenőrizni lehessen az alkalmazás legfőbb elemeinek, funkcióinak működését, valamint biztonsági és működési réseket leplezhetünk le a tesztelés során.
