@@ -61,3 +61,11 @@ A dokumentáció a következőket fogja tartalmazni:
     - Implementáció részletei: A technikai dokumentáció bemutatja az alkalmazás fejlesztési környezetét, a használt programozási nyelveket, keretrendszereket és adatbázisokat. Az implementáció részletezésével a fejlesztők könnyebben megérthetik az alkalmazás kódját és struktúráját.
     - API dokumentáció: Ha az alkalmazásnak nyilvános vagy belső API-k vannak, a dokumentáció tartalmazza ezeknek a funkcióknak a leírását és használati útmutatóját.
     - Adatmodell leírása: Az alkalmazás adatmodelljét és az adatbázissémáját részletesen ismerteti. Ide tartoznak az adatok tárolására és kezelésére vonatkozó információk.
+
+# 12. Fenntarthatóság
+
+Az alkalmazást úgy tervezték, hogy hosszútávon fenntartható legyen. A következő intézkedések szükségesek a fenntarthatóság biztosítására:
+
++ Energiahatékonyság: Az alkalmazást energiahatékonyan fogják megtervezni és implementálni energiaforrások tekintetében.
++ Felhasználói támogatás: Az alkalmazást felhasználóbarát módon készítik el, hogy a felhasználók könnyen kezelhessék azt, szükség esetén pedig segítséget is kérhetnek.
++ Frissítések: Az alkalmazást rendszeresen frissíteni fogják, hogy biztosítsák a megfelelő működését. Naprakészen tartják a harmadik felektől származó, működéshez elengedhetetlenül szükséges feltételeket. Esetleges módszertani változások bekövetkeztében igazítják az alkalmazás működését a megváltozott formai követelményekhez
