@@ -40,6 +40,14 @@ Az egyes funkciókhoz tartozó funkcionális követelmények a következők:
         + Prioritások: A prioritások részben meghatározzák, hogy mely követelményeknek van kiemelt fontossága a projekt során. Lehetőséget biztosítanak az elkészítőknek az alapvető és másodlagos követelmények megkülönböztetésére.
         + Határolások: A határolások részben meghatározzák az alkalmazás határait és az esetleges korlátozásokat. Ide tartozik például az alkalmazás támogatott platformjai, illetve az eszközök és technológiák, amelyekkel kompatibilis.
         + Megvalósítási feltételek: A megvalósítási feltételek rész tartalmazza azokat a kritikus elemeket, amelyekre a fejlesztőknek és a projekt csapatnak figyelniük kell a követelmények teljesítése során. Ez magában foglalhatja az erőforrások, a technikai specifikációk és a szükséges szoftvereket.
+        
++ Funkcionális specifikáció generálás:
+    - Az alkalmazásnak képesnek kell lennie a funkcionális specifikáció generálására a követelményspecifikáció alapján.
+    - Az alkalmazásnak a funkcionális specifikációnak a következő elemeket kell tartalmaznia:
+        + Bevezetés: Ebben a szakaszban ismertetjük az alkalmazás általános funkcionális és nem funkcionális követelményeit. Az alkalmazás célja az, hogy segítse a felhasználókat hatékonyan kezelni a projektjeiket, a követelmények gyűjtésétől kezdve a rendszerterv készítésig.
+        + Funkciók: Ezek magukban foglalják a feladatok kezelését, a követelmények gyűjtését, a követelményspecifikáció és funkcionális specifikáció generálását, valamint a rendszerterv készítését. Mindegyik funkcióhoz hozzárendelünk egy leírást, amely tartalmazza a működési folyamatot, az elvárásokat és a felhasználói interakciókat.
+        + Interfészek: Itt bemutatjuk a felhasználói felület tervezését, beleértve az alkalmazás képernyőinek elrendezését, gombokat, menük és navigációt. Továbbá ismertetjük az esetleges integrációkat más rendszerekkel vagy szolgáltatásokkal.Az interfészek szakasz segít megérteni, hogyan tudnak a felhasználók az alkalmazással kommunikálni, és hogyan működik az alkalmazás más rendszerekkel.
+        + Adatbázis: részletesen bemutatja az alkalmazás adattárolási igényeit. Itt leírjuk, hogy milyen adatokat tárol az alkalmazás, milyen adatbázisrendszert használ, és hogyan van strukturálva az adatbázis séma. Az adatbiztonsági intézkedéseket ismertetjük, például az adatok titkosítását és az adathozzáférés ellenőrzését. 
 
 + Rendszerterv generálás:
     - Az alkalmazásnak képesnek kell lennie a rendszerterv generálására a funkcionális specifikációban megírt elvárások alapján.
@@ -51,3 +59,4 @@ Az egyes funkciókhoz tartozó funkcionális követelmények a következők:
         + Architektúra: Részletesen írja le a tervezett rendszer egyes felépítésbeli elemeit alpontokban specifikusan kifejtve
         + Implementáció: A rendszer esetleges telepítési útmutatóját írja le, illetve azt, hogy a felhasználók hogyan érhetik el az alkalmazást a használat érdekében.
         + Tesztelés: A fejlesztés közben szükség van tesztek végzésére, hogy ellenőrizni lehessen az alkalmazás legfőbb elemeinek, funkcióinak működését, valamint biztonsági és működési réseket leplezhetünk le a tesztelés során.
+
