@@ -69,3 +69,34 @@ A dokumentáció a következőket fogja tartalmazni:
     - Implementáció részletei: A technikai dokumentáció bemutatja az alkalmazás fejlesztési környezetét, a használt programozási nyelveket, keretrendszereket és adatbázisokat. Az implementáció részletezésével a fejlesztők könnyebben megérthetik az alkalmazás kódját és struktúráját.
     - API dokumentáció: Ha az alkalmazásnak nyilvános vagy belső API-k vannak, a dokumentáció tartalmazza ezeknek a funkcióknak a leírását és használati útmutatóját.
     - Adatmodell leírása: Az alkalmazás adatmodelljét és az adatbázissémáját részletesen ismerteti. Ide tartoznak az adatok tárolására és kezelésére vonatkozó információk.
+
+## 8. Tervezett idővonal
+
++ Projekt kezdet: A projekt kezdetén meghatározzuk a projektet, kijelöljük az erőforrásokat, elvégezzük a szükséges kutatásokat és adatgyűjtést, valamint kidolgozzuk a projekttervet. (Kezdet: 2023-07-01)
+
++ Követelménygyűjtés: Ebben a szakaszban gyűjtjük és elemzünk felhasználói és üzleti követelményeket, majd dokumentáljuk ezeket. (Időszak: 2023-07-15 - 2023-08-15)
+
++ Követelményspecifikáció: Elkészítjük a követelményspecifikációt a gyűjtött követelmények alapján. (Időszak: 2023-08-16 - 2023-09-15)
+
++ Funkcionális specifikáció: Ebben a fázisban készítjük el a funkcionális specifikációt a követelményspecifikáció alapján. (Időszak: 2023-09-16 - 2023-10-15)
+
++ Rendszerterv: Kidolgozzuk a rendszertervet a funkcionális specifikáció alapján, és elkészítjük az adatbázis tervezését és implementálását. (Időszak: 2023-10-16 - 2023-11-30)
+
++ Tesztelés: A rendszertervet validáljuk és teszteljük, javítjuk az esetleges hibákat, és finomítjuk a rendszert. (Időszak: 2023-12-01 - 2023-12-15)
+
++ Dokumentáció és befejezés: Véglegesítjük a rendszertervet, dokumentáljuk a projektet, és lezárjuk a projektet, majd átadjuk a felhasználóknak vagy fejlesztő csapatnak. (Időszak: 2023-12-16 - 2024-01-01)
+
+## 11. Tervezett piac
+
++ Az alkalmazást elsősorban Magyarországon és a környező országokban fogják értékesíteni, de ezen kívül nemzetközi értékesítésre is alkalmas.
+
++ A tervezett felhasználópiacot fejlesztő csapatok alkotják, akik szeretnék megkönnyíteni a fejlesztéssel járó munkálataikat a mesterséges inteligenciák használatának segítségével.
+
+# 12. Fenntarthatóság
+
+Az alkalmazást úgy tervezték, hogy hosszútávon fenntartható legyen. A következő intézkedések szükségesek a fenntarthatóság biztosítására:
+
++ Energiahatékonyság: Az alkalmazást energiahatékonyan fogják megtervezni és implementálni energiaforrások tekintetében.
++ Felhasználói támogatás: Az alkalmazást felhasználóbarát módon készítik el, hogy a felhasználók könnyen kezelhessék azt, szükség esetén pedig segítséget is kérhetnek.
++ Frissítések: Az alkalmazást rendszeresen frissíteni fogják, hogy biztosítsák a megfelelő működését. Naprakészen tartják a harmadik felektől származó, működéshez elengedhetetlenül szükséges feltételeket. Esetleges módszertani változások bekövetkeztében igazítják az alkalmazás működését a megváltozott formai követelményekhez
+

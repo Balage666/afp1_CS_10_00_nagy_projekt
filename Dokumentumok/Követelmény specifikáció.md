@@ -7,6 +7,32 @@ Az alkalmazás célja, hogy segítse a cégeket egy alkalmazás fejlesztésének
 Ennek érdekében az alkalmazás alfeladatokat jelöl ki, folyamatkövető rendszert alkot a projekthez és el is készíti a teljes projektet minden szükséges melléklettel.
 Elkészíti a szükséges dokumentumokat, a követelményspecifikációt, funkcionális specifikációt és a rendszertervet.
 
+## 3. Funkcionális követelmény
+
+Az alkalmazásnak a következő funkcionális követelményeknek kell megfelelnie:
+
+- Felhasználói felület: Az alkalmazásnak egy könnyen használható felülettel kell rendelkeznie, amely lehetővé teszi a felhasználók számára, hogy egyszerűen és hatékonyan használják az alkalmazást.
+
+- Feladatok kezelése: Az alkalmazásnak lehetőséget kell biztosítania a feladatok létrehozására, módosítására, törlésére és prioritásának beállítására.
+
+- Követelménygyűjtés: Az alkalmazásnak lehetőséget kell biztosítania a felhasználóknak és az üzleti szakértőknek a követelmények gyűjtésére, hogy struktúrált és jól dokumentált információkat kapjunk.
+
+- Követelményspecifikáció generálás: Az alkalmazásnak képesnek kell lennie arra, hogy a gyűjtött követelmények alapján automatikusan generálja a követelményspecifikációt, ami a feladatokat és elvárásokat részletesen tartalmazza.
+
+- Funkcionális specifikáció generálás: Az alkalmazásnak lehetőséget kell biztosítania arra, hogy a követelményspecifikáció alapján létrehozzon egy funkcionális specifikációt, amely részletesen bemutatja, hogyan kell megvalósítani a követelményeket.
+
+- Rendszerterv generálás: Az alkalmazásnak képesnek kell lennie a funkcionális specifikáció alapján generálni egy rendszertervet, ami leírja, hogyan kell megvalósítani a funkcionális specifikációban szereplő funkcionalitást a technikai szempontok alapján.
+
+## 4. Nem Funkcionális követelmény
+
+Az alkalmazásnak a következő nem funkcionális követelményeknek kell megfelelnie:
+
+- Biztonság: Az alkalmazásnak biztonságot kell biztosítania az adatok számára. Az alkalmazásnak meg kell felelnie az érvényben lévő adatvédelmi jogszabályoknak és előírásoknak.
+
+- Teljesítmény: Az alkalmazásnak elég hatékonyan kell működnie ahhoz, hogy ne lassítsa le az alkalmazásfejlesztési folyamatot. A felhasználók ne tapasztaljanak túlzott késéseket vagy lefagyásokat, amikor az alkalmazást használják.
+
+- Költség: Az alkalmazásnak megfizethetőnek kell lennie a cégek számára. Ez azt jelenti, hogy az üzemeltetés és karbantartás költségeknek megfelelően alacsonyaknak kell lenniük, és az alkalmazásnak hatékonyan kell gazdálkodnia az erőforrásaival. Fontos a fenntartható működés és a költségek ellenőrzése.
+
 ## 5. Követelménykövetés
 Az alkalmazásnak képesnek kell lennie a követelmények követésére, és értesítenie kell a felhasználókat, ha a követelmények megváltoztak.
 Az alkalmazásnak rendelkeznie kell egy hatékony követelménykövetési mechanizmussal, amely lehetővé teszi a felhasználók számára, hogy nyomon kövessék és kezeljék a projekt során felmerülő követelményeket. 
