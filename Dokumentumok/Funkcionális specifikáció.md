@@ -48,3 +48,15 @@ Az egyes funkciókhoz tartozó funkcionális követelmények a következők:
         + Funkciók: Ezek magukban foglalják a feladatok kezelését, a követelmények gyűjtését, a követelményspecifikáció és funkcionális specifikáció generálását, valamint a rendszerterv készítését. Mindegyik funkcióhoz hozzárendelünk egy leírást, amely tartalmazza a működési folyamatot, az elvárásokat és a felhasználói interakciókat.
         + Interfészek: Itt bemutatjuk a felhasználói felület tervezését, beleértve az alkalmazás képernyőinek elrendezését, gombokat, menük és navigációt. Továbbá ismertetjük az esetleges integrációkat más rendszerekkel vagy szolgáltatásokkal.Az interfészek szakasz segít megérteni, hogyan tudnak a felhasználók az alkalmazással kommunikálni, és hogyan működik az alkalmazás más rendszerekkel.
         + Adatbázis: részletesen bemutatja az alkalmazás adattárolási igényeit. Itt leírjuk, hogy milyen adatokat tárol az alkalmazás, milyen adatbázisrendszert használ, és hogyan van strukturálva az adatbázis séma. Az adatbiztonsági intézkedéseket ismertetjük, például az adatok titkosítását és az adathozzáférés ellenőrzését. 
+
++ Rendszerterv generálás:
+    - Az alkalmazásnak képesnek kell lennie a rendszerterv generálására a funkcionális specifikációban megírt elvárások alapján.
+    - Ez a funkció nagyban megkönnyíti a várt rendszerkövetelmények előzetesen megállapítani a közelítőleges rendszerigényeket.
+    - A rendszerterv generálása segít a projekt céljainak és követelményeinek meghatározásában a rendszer létrehozásának vonzatában.
+    - A generált rendszerterv esetlegesen rávilágíthat segítséget nyújtó opciókra ,ezáltal a fejlesztés hatékonysága növekedhet és a végtermék minősőgét is pozitívan tudja befolyásolni.
+    - Az alkalmazásnak a rendszertervnek a következő elemeket kell tartalmaznia:
+        + Bevezetés: A bevezetés tartalmazza a rendszer általános leírását, összefoglalva az alábbi pontokat.
+        + Architektúra: Részletesen írja le a tervezett rendszer egyes felépítésbeli elemeit alpontokban specifikusan kifejtve
+        + Implementáció: A rendszer esetleges telepítési útmutatóját írja le, illetve azt, hogy a felhasználók hogyan érhetik el az alkalmazást a használat érdekében.
+        + Tesztelés: A fejlesztés közben szükség van tesztek végzésére, hogy ellenőrizni lehessen az alkalmazás legfőbb elemeinek, funkcióinak működését, valamint biztonsági és működési réseket leplezhetünk le a tesztelés során.
+
