@@ -45,6 +45,14 @@ Hibajavítások: Az alkalmazás hibáinak javítása.
 Új funkciók hozzáadása: Az alkalmazás új funkcióinak hozzáadása.
 Teljesítmény javítása: Az alkalmazás teljesítményének javítása.
 
+## 6. Biztonság
+
+Az alkalmazás biztonságos lesz, és meg fog felelni az adatvédelmi előírásoknak. A biztonsági intézkedések a következők lesznek:
+
+ - Jelszó erősség ellenőrzés: A felhasználók jelszavait erősség ellenőrzésnek fogják alávetni.
+ - Adat titkosítás: Az alkalmazás adatait titkosítva fogják tárolni.
+ - Hozzáférés-szabályozás: Az alkalmazáshoz csak a megfelelő jogosultságokkal rendelkező felhasználók férhetnek hozzá.
+
 ## 7. Dokumentáció
 
 Az alkalmazásnak megfelelő dokumentációval kell rendelkeznie, hogy a felhasználók könnyen meg tudják tanulni a használatát. 
