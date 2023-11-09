@@ -61,3 +61,9 @@ A dokumentáció a következőket fogja tartalmazni:
     - Implementáció részletei: A technikai dokumentáció bemutatja az alkalmazás fejlesztési környezetét, a használt programozási nyelveket, keretrendszereket és adatbázisokat. Az implementáció részletezésével a fejlesztők könnyebben megérthetik az alkalmazás kódját és struktúráját.
     - API dokumentáció: Ha az alkalmazásnak nyilvános vagy belső API-k vannak, a dokumentáció tartalmazza ezeknek a funkcióknak a leírását és használati útmutatóját.
     - Adatmodell leírása: Az alkalmazás adatmodelljét és az adatbázissémáját részletesen ismerteti. Ide tartoznak az adatok tárolására és kezelésére vonatkozó információk.
+
+## 11. Tervezett piac
+
+Az alkalmazást elsősorban Magyarországon és a környező országokban fogják értékesíteni, de ezen kívül nemzetközi értékesítésre is alkalmas.
+
+A tervezett felhasználópiacot fejlesztő csapatok alkotják, akik szeretnék megkönnyíteni a fejlesztéssel járó munkálataikat a mesterséges inteligenciák használatának segítségével.
