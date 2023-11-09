@@ -77,3 +77,18 @@ A dokumentáció a következőket fogja tartalmazni:
 + Tesztelés: A rendszertervet validáljuk és teszteljük, javítjuk az esetleges hibákat, és finomítjuk a rendszert. (Időszak: 2023-12-01 - 2023-12-15)
 
 + Dokumentáció és befejezés: Véglegesítjük a rendszertervet, dokumentáljuk a projektet, és lezárjuk a projektet, majd átadjuk a felhasználóknak vagy fejlesztő csapatnak. (Időszak: 2023-12-16 - 2024-01-01)
+
+## 11. Tervezett piac
+
++ Az alkalmazást elsősorban Magyarországon és a környező országokban fogják értékesíteni, de ezen kívül nemzetközi értékesítésre is alkalmas.
+
++ A tervezett felhasználópiacot fejlesztő csapatok alkotják, akik szeretnék megkönnyíteni a fejlesztéssel járó munkálataikat a mesterséges inteligenciák használatának segítségével.
+
+# 12. Fenntarthatóság
+
+Az alkalmazást úgy tervezték, hogy hosszútávon fenntartható legyen. A következő intézkedések szükségesek a fenntarthatóság biztosítására:
+
++ Energiahatékonyság: Az alkalmazást energiahatékonyan fogják megtervezni és implementálni energiaforrások tekintetében.
++ Felhasználói támogatás: Az alkalmazást felhasználóbarát módon készítik el, hogy a felhasználók könnyen kezelhessék azt, szükség esetén pedig segítséget is kérhetnek.
++ Frissítések: Az alkalmazást rendszeresen frissíteni fogják, hogy biztosítsák a megfelelő működését. Naprakészen tartják a harmadik felektől származó, működéshez elengedhetetlenül szükséges feltételeket. Esetleges módszertani változások bekövetkeztében igazítják az alkalmazás működését a megváltozott formai követelményekhez
+
