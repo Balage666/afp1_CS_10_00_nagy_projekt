@@ -7,6 +7,17 @@ Ez a dokumentum az Applikációfejlesztési folyamat-támogató alkalmazás funk
 
 Az alkalmazásnak a következő funkciókkal kell rendelkeznie:
 
+ - Felhasználói felület: Az alkalmazásnak felhasználóbarát felülettel kell rendelkeznie, amely lehetővé teszi a felhasználók számára, hogy könnyen és gyorsan használják.
+ - Feladatok kezelése: 
+    + A feladatok kezelésére vonatkozó funkcionális követelmények számos kulcsfontosságú elemre összpontosítanak az alkalmazás fejlesztése során. 
+    + Elsődlegesen az alkalmazásnak lehetőséget kell biztosítania a feladatok egyszerű és hatékony kezelésére, ideértve a feladatok létrehozását, módosítását, törlését és priorizálását. 
+    + Ezáltal a felhasználók könnyedén navigálhatnak a feladatok között, és azokat az aktuális igényeikhez igazíthatják.
+    + A projektalapú munka támogatása is kiemelt szerepet kap, így az alkalmazásnak lehetővé kell tennie a felhasználók számára, hogy feladatokat hozzanak létre és rendeljenek hozzá az egyes projektekhez. 
+    + Emellett az ütemezés funkció is nélkülözhetetlen, hogy a felhasználók időzíthessék és tervezhessék a feladatokat a projektekben. 
+    + Ezáltal az alkalmazás segít a felhasználóknak a munka hatékonyabb szervezésében és a projektek céljainak elérésében.
+    + A feladatok állapotának nyomon követése is alapvető funkciója az alkalmazásnak. 
+    + Ennek révén a felhasználók mindig tájékozottak lehetnek arról, hogy a feladatok hol tartanak a végrehajtási folyamatban. 
+    + Ez növeli az átláthatóságot és lehetővé teszi a csapatok számára, hogy hatékonyabban együttműködjenek, kövessék a fejlődést, és időben reagáljanak esetleges kihívásokra.
  - Felhasználói felület:
   
     + A funkcionális követelmények részletezése során fontos kiemelni, hogy az alkalmazás tervezése és fejlesztése során kiemelt figyelmet kell fordítani a felhasználói felületre. 
