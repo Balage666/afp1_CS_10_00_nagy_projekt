@@ -94,6 +94,14 @@ A dokumentáció a következőket fogja tartalmazni:
 + Az alkalmazás tervezésekor ezen felhasználói csoportok igényeit és elvárásait vettük figyelembe, hogy az alkalmazás a lehető legmegfelelőbb és hasznosabb legyen számukra. 
 + A cél, hogy az alkalmazás segítse ezen cégek munkafolyamatait, és hozzájáruljon az alkalmazásfejlesztési projektek hatékonyabb lebonyolításához.
 
+## 9. Tervezett költség
+
++ Az alkalmazás tervezett fejlesztési költsége 10 millió forint lesz. 
++ Ez a költség az összes szükséges erőforrást és fejlesztési tevékenységet magában foglalja. 
++ A tervezett költség kialakításakor figyelembe vettük a fejlesztés során szükséges infrastruktúra, személyi erőforrások és egyéb költségeket. 
++ A 10 millió forintos költségterv célja a projekt hatékony végrehajtásának biztosítása, valamint a pénzügyi stabilitás fenntartása a fejlesztés teljes időtartama alatt. 
++ A költségterv kidolgozása során a projekt minden szempontját átfogóan vizsgáltuk, hogy biztosítsuk a zökkenőmentes és sikeres fejlesztési folyamatot.
+
 ## 11. Tervezett piac
 
 + Az alkalmazást elsősorban Magyarországon és a környező országokban fogják értékesíteni, de ezen kívül nemzetközi értékesítésre is alkalmas.
