@@ -7,6 +7,18 @@ Az alkalmazás célja, hogy segítse a cégeket egy alkalmazás fejlesztésének
 Ennek érdekében az alkalmazás alfeladatokat jelöl ki, folyamatkövető rendszert alkot a projekthez és el is készíti a teljes projektet minden szükséges melléklettel.
 Elkészíti a szükséges dokumentumokat, a követelményspecifikációt, funkcionális specifikációt és a rendszertervet.
 
+## 2. Célok
+
+Az alkalmazás céljai között szerepel, hogy ne csak az alkalmazásfejlesztési folyamatot egyszerűsítse le, hanem ezt a folyamatot még hatékonyabbá is tegye. 
+Ennek érdekében a feladatokat nemcsak egyszerűen feladatokra, hanem azokat tovább bontja alfeladatokra is, lehetővé téve ezzel a csapatoknak, hogy könnyebben kezeljék és kövessék a fejlesztési folyamatot.
+
+A követelmény specifikáció, funkcionális specifikáció és rendszerterv kidolgozása kulcsfontosságú lépése a projekt sikerének. 
+A cél az, hogy részletesen leírja a projekt követelményeit, funkcionalitását és az alkalmazás általános működését. 
+Ezek a dokumentumok nem csupán iránymutatások, hanem segítenek a csapatnak az egységes célok elérésében és a fejlesztési folyamat hatékonyabbá tételében.
+
+Fontos megjegyezni, hogy a célkitűzéseket nem csupán száraz technikai részletekkel, hanem az alkalmazás mögött álló nagyobb célkitűzésekkel és vízióval is kiegészítjük. 
+Az alkalmazásnak nemcsak funkcionálisan kell működnie, hanem hozzá kell járulnia a felhasználói élményhez és az üzleti stratégiák sikeréhez is.
+
 ## 3. Funkcionális követelmény
 
 Az alkalmazásnak a következő funkcionális követelményeknek kell megfelelnie:

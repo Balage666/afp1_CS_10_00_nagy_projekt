@@ -18,6 +18,17 @@ Az alkalmazásnak a következő funkciókkal kell rendelkeznie:
     + A feladatok állapotának nyomon követése is alapvető funkciója az alkalmazásnak. 
     + Ennek révén a felhasználók mindig tájékozottak lehetnek arról, hogy a feladatok hol tartanak a végrehajtási folyamatban. 
     + Ez növeli az átláthatóságot és lehetővé teszi a csapatok számára, hogy hatékonyabban együttműködjenek, kövessék a fejlődést, és időben reagáljanak esetleges kihívásokra.
+ - Felhasználói felület:
+  
+    + A funkcionális követelmények részletezése során fontos kiemelni, hogy az alkalmazás tervezése és fejlesztése során kiemelt figyelmet kell fordítani a felhasználói felületre. 
+    + A felületnek nem csupán esztétikusnak kell lennie, hanem felhasználóbarátnak is, hogy a felhasználók könnyen és hatékonyan navigálhassanak az alkalmazáson keresztül. 
+    + Ezáltal növelhető a felhasználói elégedettség és az alkalmazás általános elfogadottsága.
+    + A felhasználói személyre szabhatóság egy másik fontos aspektusa a funkcionális követelményeknek. 
+    + Az alkalmazásnak lehetőséget kell biztosítania a felhasználóknak arra, hogy testre szabhassák bizonyos elemeket, például a felület színét és stílusát. 
+    + Ezáltal minden felhasználó számára egyedi és személyre szabott élményt nyújtva növelhető az alkalmazás vonzereje és használhatósága.
+    + A személyre szabhatóság a felhasználók egyedi igényeire való rugalmas reagálást teszi lehetővé, ami hozzájárulhat az alkalmazás sikeréhez a piacon.
+
+ - Feladatok kezelése: Az alkalmazásnak képesnek kell lennie a feladatok kezelésére, beleértve a feladatok létrehozását, módosítását, törlését és priorizátását.
  - Követelménygyűjtés: Az alkalmazásnak képesnek kell lennie a követelmények gyűjtésére a felhasználóktól és az üzleti szakértőktől.
  - Követelményspecifikáció generálás: Az alkalmazásnak képesnek kell lennie a követelményspecifikáció generálására a felhasználóktól és az üzleti szakértőktől gyűjtött követelmények alapján.
  - Funkcionális specifikáció generálás: Az alkalmazásnak képesnek kell lennie a funkcionális specifikáció generálására a követelményspecifikáció alapján.
