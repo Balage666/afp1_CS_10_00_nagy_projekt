@@ -86,6 +86,14 @@ A dokumentáció a következőket fogja tartalmazni:
 
 + Dokumentáció és befejezés: Véglegesítjük a rendszertervet, dokumentáljuk a projektet, és lezárjuk a projektet, majd átadjuk a felhasználóknak vagy fejlesztő csapatnak. (Időszak: 2023-12-16 - 2024-01-01)
 
+## 10. Tervezett felhasználók
+
++ Az alkalmazást főként alkalmazásfejlesztő cégek tervezik használni. 
++ Az alkalmazás célközönsége kifejezetten azokat a vállalkozásokat foglalja magában, amelyek szoftvertervezéssel és -fejlesztéssel foglalkoznak. 
++ A tervezett felhasználók között olyan szakmai szereplők számítanak, akik az alkalmazásfejlesztési folyamatokat hatékonyabban kívánják kezelni és optimalizálni. 
++ Az alkalmazás tervezésekor ezen felhasználói csoportok igényeit és elvárásait vettük figyelembe, hogy az alkalmazás a lehető legmegfelelőbb és hasznosabb legyen számukra. 
++ A cél, hogy az alkalmazás segítse ezen cégek munkafolyamatait, és hozzájáruljon az alkalmazásfejlesztési projektek hatékonyabb lebonyolításához.
+
 ## 9. Tervezett költség
 
 + Az alkalmazás tervezett fejlesztési költsége 10 millió forint lesz. 
