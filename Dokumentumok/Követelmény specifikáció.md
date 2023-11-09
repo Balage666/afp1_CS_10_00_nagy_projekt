@@ -23,6 +23,16 @@ Az alkalmazásnak a következő funkcionális követelményeknek kell megfelelni
 
 - Rendszerterv generálás: Az alkalmazásnak képesnek kell lennie a funkcionális specifikáció alapján generálni egy rendszertervet, ami leírja, hogyan kell megvalósítani a funkcionális specifikációban szereplő funkcionalitást a technikai szempontok alapján.
 
+## 4. Nem Funkcionális követelmény
+
+Az alkalmazásnak a következő nem funkcionális követelményeknek kell megfelelnie:
+
+- Biztonság: Az alkalmazásnak biztonságot kell biztosítania az adatok számára. Az alkalmazásnak meg kell felelnie az érvényben lévő adatvédelmi jogszabályoknak és előírásoknak.
+
+- Teljesítmény: Az alkalmazásnak elég hatékonyan kell működnie ahhoz, hogy ne lassítsa le az alkalmazásfejlesztési folyamatot. A felhasználók ne tapasztaljanak túlzott késéseket vagy lefagyásokat, amikor az alkalmazást használják.
+
+- Költség: Az alkalmazásnak megfizethetőnek kell lennie a cégek számára. Ez azt jelenti, hogy az üzemeltetés és karbantartás költségeknek megfelelően alacsonyaknak kell lenniük, és az alkalmazásnak hatékonyan kell gazdálkodnia az erőforrásaival. Fontos a fenntartható működés és a költségek ellenőrzése.
+
 ## 5. Követelménykövetés
 Az alkalmazásnak képesnek kell lennie a követelmények követésére, és értesítenie kell a felhasználókat, ha a követelmények megváltoztak.
 Az alkalmazásnak rendelkeznie kell egy hatékony követelménykövetési mechanizmussal, amely lehetővé teszi a felhasználók számára, hogy nyomon kövessék és kezeljék a projekt során felmerülő követelményeket. 
