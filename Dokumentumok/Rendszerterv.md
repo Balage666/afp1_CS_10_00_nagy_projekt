@@ -64,4 +64,16 @@ A dokumentáció a következőket fogja tartalmazni:
 
 ## 8. Tervezett idővonal
 
-Az alkalmazást 2024-01-01-ig fogják befejezni.
++ Projekt kezdet: A projekt kezdetén meghatározzuk a projektet, kijelöljük az erőforrásokat, elvégezzük a szükséges kutatásokat és adatgyűjtést, valamint kidolgozzuk a projekttervet. (Kezdet: 2023-07-01)
+
++ Követelménygyűjtés: Ebben a szakaszban gyűjtjük és elemzünk felhasználói és üzleti követelményeket, majd dokumentáljuk ezeket. (Időszak: 2023-07-15 - 2023-08-15)
+
++ Követelményspecifikáció: Elkészítjük a követelményspecifikációt a gyűjtött követelmények alapján. (Időszak: 2023-08-16 - 2023-09-15)
+
++ Funkcionális specifikáció: Ebben a fázisban készítjük el a funkcionális specifikációt a követelményspecifikáció alapján. (Időszak: 2023-09-16 - 2023-10-15)
+
++ Rendszerterv: Kidolgozzuk a rendszertervet a funkcionális specifikáció alapján, és elkészítjük az adatbázis tervezését és implementálását. (Időszak: 2023-10-16 - 2023-11-30)
+
++ Tesztelés: A rendszertervet validáljuk és teszteljük, javítjuk az esetleges hibákat, és finomítjuk a rendszert. (Időszak: 2023-12-01 - 2023-12-15)
+
++ Dokumentáció és befejezés: Véglegesítjük a rendszertervet, dokumentáljuk a projektet, és lezárjuk a projektet, majd átadjuk a felhasználóknak vagy fejlesztő csapatnak. (Időszak: 2023-12-16 - 2024-01-01)
