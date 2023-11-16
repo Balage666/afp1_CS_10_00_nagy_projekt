@@ -7,7 +7,7 @@ def login(request):
         password = request.POST.get('password')
         try:
             user = User.objects.get(username=username, password=password)
-            return redirect('/index')
+            return redirect('/users')
         except User.DoesNotExist:
             error_message = 'Hibás felhasználónév vagy jelszó.'
             return render(request, 'login.html', {'error_message': error_message})
