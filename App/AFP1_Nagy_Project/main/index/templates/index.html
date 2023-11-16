@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Index oldal</h1>
+{% if request.user.is_authenticated : %}
+    <!-- Megjelenik az oldal tartalma... -->    
+    <h1>Bejelentkezett</h1>
+{% endif %}
+
+{% if (!request.user.is_authenticated): %}
+    <!-- átdob a login oldalra... -->
+    <h1>Nincs bejelentkezve</h1>
+{% endif %}
+
+
+</body>
+</html>
