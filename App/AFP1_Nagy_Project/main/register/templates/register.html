@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Regisztráció</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Háttérkép és átlátszó maszk */
+        .bg-image {
+            background-image: url('https://cdn.discordapp.com/attachments/1162021079636775064/1176894375922520154/images.png?ex=6570874c&is=655e124c&hm=baf96bb4406ca208835aaa70b74eba4e09a8f4c96edf049d7212e78bd708bd6c');
+            background-size: cover;
+        }
+
+        .gradient-custom-3 {
+            /* Add your gradient styles here */
+        }
+
         /* Felugró ablak stílusai */
         .popup {
             display: none;
@@ -16,42 +27,62 @@
             border: 1px solid #ccc;
             z-index: 9999;
         }
+
+        /* Card style for form */
+        .card {
+            border-radius: 15px;
+        }
     </style>
 </head>
-<body>
-    {% if error_message %}
-    <div class="popup" id="popup">
-        <p>{{ error_message }}</p>
-        <button onclick="closePopup()">Bezárás</button>
+<body class="bg-image">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="card p-5">
+                    {% if error_message %}
+                    <div class="popup" id="popup">
+                        <p>{{ error_message }}</p>
+                        <button onclick="closePopup()" class="btn btn-primary">Bezárás</button>
+                    </div>
+                    <script>
+                        function closePopup() {
+                            document.getElementById('popup').style.display = 'none';
+                        }
+
+                        window.onload = function () {
+                            var popup = document.getElementById('popup');
+                            if (popup) {
+                                popup.style.display = 'block';
+                            }
+                        };
+                    </script>
+                    {% endif %}
+                    <h2 class="text-uppercase text-center mb-5">Regisztráció</h2>
+
+                    <form action="/register/" method="post" class="mb-4">
+                        {% csrf_token %}
+                        <div class="form-outline mb-4">
+                            <input type="text" id="username" name="username" required class="form-control form-control-lg">
+                            <label class="form-label" for="username">Felhasználónév</label>
+                        </div>
+                        
+                        <div class="form-outline mb-4">
+                            <input type="password" id="password" name="password" required class="form-control form-control-lg">
+                            <label class="form-label" for="password">Jelszó</label>
+                        </div>
+                        
+                        <div class="form-outline mb-4">
+                            <input type="password" id="confirm_password" name="confirm_password" required class="form-control form-control-lg">
+                            <label class="form-label" for="confirm_password">Jelszó megerősítése</label>
+                        </div>
+                        
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" value="Regisztráció" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <script>
-        function closePopup() {
-            var popup = document.getElementById('popup');
-            popup.style.display = 'none';
-        }
-
-        window.onload = function () {
-            var popup = document.getElementById('popup');
-            if (popup) {
-                popup.style.display = 'block';
-            }
-        };
-    </script>
-    {% endif %}
-    <h2>Regisztráció</h2>
-
-    <form action="/register/" method="post">
-        {% csrf_token %}
-        <label for="username">Felhasználónév:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        
-        <label for="password">Jelszó:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <label for="confirm_password">Jelszó megerősítése:</label>
-        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-        
-        <input type="submit" value="Regisztráció">
-    </form>
 </body>
 </html>
