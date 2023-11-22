@@ -7,12 +7,33 @@
     <style>
         /* Háttérkép és átlátszó maszk */
         .bg-image {
-            background-image: url('https://cdn.discordapp.com/attachments/1162021079636775064/1176894375922520154/images.png?ex=6570874c&is=655e124c&hm=baf96bb4406ca208835aaa70b74eba4e09a8f4c96edf049d7212e78bd708bd6c');
+            background-image: url('https://wallpapercave.com/wp/wp12183517.png');
             background-size: cover;
         }
+        /* Gradient stílusok a regisztrációs gombhoz, hogy illeszkedjen a háttér színeihez */
+.gradient-custom-4 {
+    background: linear-gradient(45deg, #ffba00 0%, #ff6c00 100%);
+}
 
-        .gradient-custom-3 {
-            /* Add your gradient styles here */
+        /* Card stílus frissítése, hogy illeszkedjen a háttér geometriai mintáihoz */
+        .card {
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Gomb és űrlap elemek stílusainak frissítése a háttér színével való illeszkedés érdekében */
+        .btn-primary, .form-control {
+            background-color: #fff;
+            border: none;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255, 108, 0, 0.25);
+        }
+
+        .btn-primary:hover {
+            background-color: #fca311;
         }
 
         /* Felugró ablak stílusai */
@@ -80,6 +101,9 @@
                             <input type="submit" value="Regisztráció" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">
                         </div>
                     </form>
+                    <div class="mt-4">
+                        <p class="text-center">Van már fiókod? <a href="/login/" class="text-primary">Jelentkezz be!</a></p>
+                    </div>
                 </div>
             </div>
         </div>
