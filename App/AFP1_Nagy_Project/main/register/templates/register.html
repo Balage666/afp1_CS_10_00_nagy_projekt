@@ -5,24 +5,27 @@
     <title>Regisztráció</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Háttérkép és átlátszó maszk */
+        /* Háttérkép */
         .bg-image {
             background-image: url('https://wallpapercave.com/wp/wp12183517.png');
             background-size: cover;
+            background-position: center center;
+            height: 100vh; /* Add this to make sure the background covers the full viewport height */
         }
-        /* Gradient stílusok a regisztrációs gombhoz, hogy illeszkedjen a háttér színeihez */
-.gradient-custom-4 {
-    background: linear-gradient(45deg, #ffba00 0%, #ff6c00 100%);
-}
 
-        /* Card stílus frissítése, hogy illeszkedjen a háttér geometriai mintáihoz */
+        /* Gradient stílusok a regisztrációs gombhoz */
+        .gradient-custom-4 {
+            background: linear-gradient(45deg, #ffba00 0%, #ff6c00 100%);
+        }
+
+        /* Card stílus */
         .card {
             border-radius: 15px;
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
         }
 
-        /* Gomb és űrlap elemek stílusainak frissítése a háttér színével való illeszkedés érdekében */
+        /* Gomb és űrlap elemek stílusai */
         .btn-primary, .form-control {
             background-color: #fff;
             border: none;
@@ -36,7 +39,7 @@
             background-color: #fca311;
         }
 
-        /* Felugró ablak stílusai */
+        /* Popup stílusai */
         .popup {
             display: none;
             position: fixed;
@@ -49,9 +52,25 @@
             z-index: 9999;
         }
 
-        /* Card style for form */
+        /* Card style */
         .card {
             border-radius: 15px;
+        }
+
+        /* Módosítottuk a .container és .row osztályokat a függőleges középre igazításra */
+        .container {
+            min-height: 100vh; /* A teljes nézet magasságát foglalja el */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row {
+            width: 100%; /* Teljes szélesség az űrlap számára */
+        }
+
+        .col-12.col-md-9.col-lg-7.col-xl-6 {
+            /* Megszünteti a korlátozást, ha van */
         }
     </style>
 </head>
