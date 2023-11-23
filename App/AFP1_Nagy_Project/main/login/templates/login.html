@@ -1,16 +1,114 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <title>Bejelentkezés</title>
-</head>
-<body>
-    <h2>Bejelentkezés</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Bejelentkezés">
-        <a href="{% url 'register' %}">Regisztráció</a>
-    </form>
-</body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta lang="hu">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bejelentkezés</title>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="style.css">
+    <style>
+                        body {
+                background-image: url('https://wallpapercave.com/wp/wp12183517.png');    
+                background-size: cover; /* Add this line to ensure full coverage */
+                background-position: center; /* Optional: Center the background image */
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .login-container {
+                background-color:   #171d20;    
+                color: #FFE5B4;
+                padding: 30px;
+                border-radius: 15px; 
+                border: solid black;
+                overflow: hidden; 
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+            }
+
+            .login-form {
+                border-radius: 10px; 
+            }
+
+            .login-form h2 {
+                text-align: center;
+                margin-bottom: 30px;    
+            }
+
+            .login-form form {
+                margin-bottom: 15px;
+                border-radius: 10px;
+                overflow: hidden; 
+            }
+
+            .login-form label {
+                font-weight: bold;
+            }
+
+            .login-form input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .login-form button {
+                width: 100%;
+                padding: 10px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .login-form button:hover {
+                background-color: #0056b3;
+            }
+
+            .login-form input::placeholder {
+                color: transparent;
+            }
+
+            .login-form input:focus::placeholder {
+                color: #6c757d;
+            }
+
+            .login-form label i {
+                margin-right: 10px;
+            }
+
+        </style>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 login-container">
+					<div class="login-form">
+						<h2>Bejelentkezés</h2>
+						<form method="post">
+               {% csrf_token %}
+               {{ form.as_p }}
+							<button type="submit" class="btn">Bejelentkezés</button>
+						</form>
+						<p>Nincs még fiókja? <a href="{% url 'register' %}" id="registerLink">Regisztráció</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</body>
 </html>

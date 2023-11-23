@@ -3,14 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Regisztráció</title>
-</head>
-<body>
-    <h2>Regisztráció</h2>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Háttérkép */
+        .bg-image {
+            background-image: url('https://wallpapercave.com/wp/wp12183517.png');
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
 
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}        
-        <input type="submit" value="Regisztráció">
-    </form>
+        /* Gradient stílusok a regisztrációs gombhoz */
+        .gradient-custom-4 {
+            background: linear-gradient(45deg, #ffba00 0%, #ff6c00 100%);
+        }
+
+        /* Card stílus */
+        .card {
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Gomb és űrlap elemek stílusai */
+        .btn-primary, .form-control {
+            background-color: #fff;
+            border: none;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255, 108, 0, 0.25);
+        }
+
+        .btn-primary:hover {
+            background-color: #fca311;
+        }
+
+
+        /* Card style */
+        .card {
+            border-radius: 15px;
+        }
+
+        /* Módosítottuk a .container és .row osztályokat a függőleges középre igazításra */
+        .container {
+            min-height: 100vh; /* A teljes nézet magasságát foglalja el */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row {
+            width: 100%; /* Teljes szélesség az űrlap számára */
+        }
+
+        .col-12.col-md-9.col-lg-7.col-xl-6 {
+            /* Megszünteti a korlátozást, ha van */
+        }
+    </style>
+</head>
+<body class="bg-image">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="card p-5">
+                    <h2 class="text-uppercase text-center mb-5">Regisztráció</h2>
+                    <form method="post" class="mb-4">
+                        {% csrf_token %}
+                        {{ form.as_p }}    
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" value="Regisztráció" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">
+                        </div>
+                    </form>
+                    <div class="mt-4">
+                        <p class="text-center">Van már fiókod? <a href="/login" class="text-primary">Jelentkezz be!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
