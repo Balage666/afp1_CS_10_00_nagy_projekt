@@ -9,7 +9,7 @@ def create_users():
     user = User.objects.create_user(username='felhasznalo', password='jelszo', priv='0')
     user.save()
 
-    admin = User.objects.create_user(username='admin', password='admin' priv='1')
+    admin = User.objects.create_user(username='admin', password='admin', priv='1')
     admin.save()
 
 if __name__ == '__main__':
