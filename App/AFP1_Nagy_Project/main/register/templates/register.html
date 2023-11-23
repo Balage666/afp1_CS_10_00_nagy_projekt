@@ -3,54 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Regisztráció</title>
-    <style>
-        /* Felugró ablak stílusai */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            z-index: 9999;
-        }
-    </style>
 </head>
 <body>
-    {% if error_message %}
-    <div class="popup" id="popup">
-        <p>{{ error_message }}</p>
-        <button onclick="closePopup()">Bezárás</button>
-    </div>
-    <script>
-        function closePopup() {
-            var popup = document.getElementById('popup');
-            popup.style.display = 'none';
-        }
-
-        window.onload = function () {
-            var popup = document.getElementById('popup');
-            if (popup) {
-                popup.style.display = 'block';
-            }
-        };
-    </script>
-    {% endif %}
     <h2>Regisztráció</h2>
 
-    <form action="/register/" method="post">
+    <form method="post">
         {% csrf_token %}
-        <label for="username">Felhasználónév:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        
-        <label for="password">Jelszó:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <label for="confirm_password">Jelszó megerősítése:</label>
-        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-        
+        {{ form.as_p }}        
         <input type="submit" value="Regisztráció">
     </form>
 </body>
