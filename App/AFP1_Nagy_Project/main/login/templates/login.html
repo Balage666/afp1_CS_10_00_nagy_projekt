@@ -1,55 +1,163 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <title>Bejelentkezés</title>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta lang="hu">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login Page</title>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
 
-    <style>
-        /* Felugró ablak stílusai */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            z-index: 9999;
-        }
-    </style>
-</head>
-<body>
-    {% if error_message %}
-    <div class="popup" id="popup">
-        <p>{{ error_message }}</p>
-        <button onclick="closePopup()">Bezárás</button>
-    </div>
-    <script>
-        function closePopup() {
-            var popup = document.getElementById('popup');
-            popup.style.display = 'none';
-        }
+	<body>
 
-        window.onload = function () {
-            var popup = document.getElementById('popup');
-            if (popup) {
-                popup.style.display = 'block';
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 login-container">
+					<div class="login-form">
+						<h2>Bejelentkezés</h2>
+						<form>
+							<div class="form-group">
+								<label for="username">
+									<i class="fa-solid fa-user"></i> Felhasználónév
+								</label>
+								<input type="text" class="form-control" id="username" placeholder="Add meg a felhasználóneved">
+							</div>
+							<div class="form-group">
+								<label for="password">
+									<i class="fa-solid fa-lock"></i> Jelszó
+								</label>
+								<input type="password" class="form-control" id="password" placeholder="Add meg a jelszavad">
+							</div>
+							<button type="submit" class="btn">Bejelentkezés</button>
+						</form>
+						<p>Nincs még fiókja? <a href="#" id="registerLink">Regisztráció</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <style>
+                        body {
+                background-image: url('https://wallpapercave.com/wp/wp12183517.png');    
+                background-size: cover; /* Add this line to ensure full coverage */
+                background-position: center; /* Optional: Center the background image */
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+                margin: 0;
             }
-        };
-    </script>
-    {% endif %}
 
-    <h2>Bejelentkezés</h2>
-    <form action="/login/" method="post">
-        {% csrf_token %}
-        <label for="username">Felhasználónév:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Jelszó:</label><br>
-        <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Bejelentkezés">
-        <br>
-        <a href="{% url 'register' %}">Regisztráció</a>
-    </form>
-</body>
+            .login-container {
+                background-color:   #171d20;    
+                color: #FFE5B4;
+                padding: 30px;
+                border-radius: 15px; 
+                border: solid black;
+                overflow: hidden; 
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+            }
+
+            .login-form {
+                border-radius: 10px; 
+            }
+
+            .login-form h2 {
+                text-align: center;
+                margin-bottom: 30px;    
+            }
+
+            .login-form form {
+                margin-bottom: 15px;
+                border-radius: 10px;
+                overflow: hidden; 
+            }
+
+            .login-form label {
+                font-weight: bold;
+            }
+
+            .login-form input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .login-form button {
+                width: 100%;
+                padding: 10px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .login-form button:hover {
+                background-color: #0056b3;
+            }
+
+            .login-form input::placeholder {
+                color: transparent;
+            }
+
+            .login-form input:focus::placeholder {
+                color: #6c757d;
+            }
+
+            .login-form label i {
+                margin-right: 10px;
+            }
+
+        </style>
+	</body>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+			const form = document.querySelector('form');
+			form.addEventListener('submit', function (event) {
+				event.preventDefault();
+
+				// username, pw elérése
+				const username = document.getElementById('username').value;
+				const password = document.getElementById('password').value;
+
+				//tényleges username, pwre cserélés.
+				const validUsername = 'your_username';
+				const validPassword = 'your_password';
+
+				// Ellenőrzi, hogy a megadott username, pw valid-e
+				if (username === validUsername && password === validPassword) {
+					alert('Login Successful!');
+				} else {
+					alert('Hibás felhasználónév vagy jelszó.');
+				}
+			});
+		});
+
+		document.addEventListener('DOMContentLoaded', function () {
+
+	// Add click event for the registration link
+	const registerLink = document.getElementById('registerLink');
+	registerLink.addEventListener('click', function () {
+		// Redirect to the registration page (replace 'registration.html' with your actual registration page)
+		window.location.href = 'registration.html';
+	});
+	});
+	</script>
+
 </html>
+
