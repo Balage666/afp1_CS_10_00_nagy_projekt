@@ -3,48 +3,11 @@
 		<meta charset="UTF-8">
 		<meta lang="hu">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Login Page</title>
+		<title>Bejelentkezés</title>
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="style.css">
-		
-	</head>
-
-	<body>
-
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 login-container">
-					<div class="login-form">
-						<h2>Bejelentkezés</h2>
-						<form>
-							<div class="form-group">
-								<label for="username">
-									<i class="fa-solid fa-user"></i> Felhasználónév
-								</label>
-								<input type="text" class="form-control" id="username" placeholder="Add meg a felhasználóneved">
-							</div>
-							<div class="form-group">
-								<label for="password">
-									<i class="fa-solid fa-lock"></i> Jelszó
-								</label>
-								<input type="password" class="form-control" id="password" placeholder="Add meg a jelszavad">
-							</div>
-							<button type="submit" class="btn">Bejelentkezés</button>
-						</form>
-						<p>Nincs még fiókja? <a href="#" id="registerLink">Regisztráció</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<!-- Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-        <style>
+    <style>
                         body {
                 background-image: url('https://wallpapercave.com/wp/wp12183517.png');    
                 background-size: cover; /* Add this line to ensure full coverage */
@@ -122,42 +85,30 @@
             }
 
         </style>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 login-container">
+					<div class="login-form">
+						<h2>Bejelentkezés</h2>
+						<form method="post">
+               {% csrf_token %}
+               {{ form.as_p }}
+							<button type="submit" class="btn">Bejelentkezés</button>
+						</form>
+						<p>Nincs még fiókja? <a href="{% url 'register' %}" id="registerLink">Regisztráció</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</body>
-
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-
-			const form = document.querySelector('form');
-			form.addEventListener('submit', function (event) {
-				event.preventDefault();
-
-				// username, pw elérése
-				const username = document.getElementById('username').value;
-				const password = document.getElementById('password').value;
-
-				//tényleges username, pwre cserélés.
-				const validUsername = 'your_username';
-				const validPassword = 'your_password';
-
-				// Ellenőrzi, hogy a megadott username, pw valid-e
-				if (username === validUsername && password === validPassword) {
-					alert('Login Successful!');
-				} else {
-					alert('Hibás felhasználónév vagy jelszó.');
-				}
-			});
-		});
-
-		document.addEventListener('DOMContentLoaded', function () {
-
-	// Add click event for the registration link
-	const registerLink = document.getElementById('registerLink');
-	registerLink.addEventListener('click', function () {
-		// Redirect to the registration page (replace 'registration.html' with your actual registration page)
-		window.location.href = 'registration.html';
-	});
-	});
-	</script>
-
 </html>
-

@@ -39,18 +39,6 @@
             background-color: #fca311;
         }
 
-        /* Popup stílusai */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            z-index: 9999;
-        }
 
         /* Card style */
         .card {
@@ -79,49 +67,16 @@
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                 <div class="card p-5">
-                    {% if error_message %}
-                    <div class="popup" id="popup">
-                        <p>{{ error_message }}</p>
-                        <button onclick="closePopup()" class="btn btn-primary">Bezárás</button>
-                    </div>
-                    <script>
-                        function closePopup() {
-                            document.getElementById('popup').style.display = 'none';
-                        }
-
-                        window.onload = function () {
-                            var popup = document.getElementById('popup');
-                            if (popup) {
-                                popup.style.display = 'block';
-                            }
-                        };
-                    </script>
-                    {% endif %}
                     <h2 class="text-uppercase text-center mb-5">Regisztráció</h2>
-
-                    <form action="/register/" method="post" class="mb-4">
+                    <form method="post" class="mb-4">
                         {% csrf_token %}
-                        <div class="form-outline mb-4">
-                            <label class="form-label" for="username">Felhasználónév</label>
-                            <input type="text" id="username" name="username" required class="form-control form-control-lg">
-                        </div>
-                        
-                        <div class="form-outline mb-4">
-                            <label class="form-label" for="password">Jelszó</label>
-                            <input type="password" id="password" name="password" required class="form-control form-control-lg">
-                        </div>
-                        
-                        <div class="form-outline mb-4">
-                            <label class="form-label" for="confirm_password">Jelszó megerősítése</label>
-                            <input type="password" id="confirm_password" name="confirm_password" required class="form-control form-control-lg">
-                        </div>
-                        
+                        {{ form.as_p }}    
                         <div class="d-flex justify-content-center">
                             <input type="submit" value="Regisztráció" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">
                         </div>
                     </form>
                     <div class="mt-4">
-                        <p class="text-center">Van már fiókod? <a href="/login/" class="text-primary">Jelentkezz be!</a></p>
+                        <p class="text-center">Van már fiókod? <a href="/login" class="text-primary">Jelentkezz be!</a></p>
                     </div>
                 </div>
             </div>
