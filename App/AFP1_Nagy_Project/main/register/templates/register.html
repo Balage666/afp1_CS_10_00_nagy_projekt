@@ -52,10 +52,6 @@
         .row {
             width: 100%; /* Teljes szélesség az űrlap számára */
         }
-
-        .col-12.col-md-9.col-lg-7.col-xl-6 {
-            /* Megszünteti a korlátozást, ha van */
-        }
     </style>
 </head>
 <body class="bg-image">
@@ -63,8 +59,8 @@
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                 <div class="card p-5">
-                    <h2 class="text-uppercase text-center mb-5">Regisztráció</h2>
-                    <form method="post" class="mb-4">
+                    <h2 class="text-uppercase text-center mb-2">Regisztráció</h2>
+                    <form method="post" class="mb-1">
                         {% csrf_token %}
                         <div class="form-group">
                             <label for="id_username">Felhasználónév</label>
@@ -94,7 +90,7 @@
                             <button type="submit" class="btn btn-block btn-lg gradient-custom-4 text-body">Regisztráció</button>
                         </div>
                     </form>
-                    <div class="mt-4">
+                    <div class="mt-1">
                         <p class="text-center">Van már fiókod? <a href="{% url 'login' %}" class="text-primary">Jelentkezz be!</a></p>
                     </div>
                 </div>
