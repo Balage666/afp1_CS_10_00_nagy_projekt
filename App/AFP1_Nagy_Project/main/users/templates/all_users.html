@@ -1,24 +1,68 @@
 <!DOCTYPE html>
-<html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="hu">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users in the database</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
 <body>
+    <div class="users-container">
+        <div class="row justify-content-center">
+            <div>
+                <h2 ass="col-md-6 users-container">Felhasználók</h2>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Felhasználónév</th>
+                                <th>Jelszó</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for user in users_list %}
+                            <tr>
+                                <td>{{ user.username }}</td>
+                                <td>{{ user.password }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<h1>Users in the database</h1>
-<table border="1">
-    <thead>
-        <tr>
-            <th>Username</th>
-            <th>Password</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for user in users_list %}
-        <tr>
-            <td>{{ user.username }}</td>
-            <td>{{ user.password }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+        <style>
+            body {
+                background-image: url('https://wallpapercave.com/wp/wp12183517.png');    
+                background-size: cover; /* Add this line to ensure full coverage */
+                background-position: center; /* Optional: Center the background image */
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .users-container {
+                background-color:   #171d20;    
+                color: #FFE5B4;
+                padding: 30px;
+                border-radius: 15px; 
+                border: solid black;
+                overflow: hidden; 
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+            }
+        </style>
 
 </body>
 </html>
