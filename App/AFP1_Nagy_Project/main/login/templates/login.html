@@ -87,8 +87,6 @@
         </style>
 	</head>
 
-	{% load crispy_forms_tags %}
-
 <body>
 
     <div class="container">
@@ -98,7 +96,6 @@
                     <h2>Bejelentkezés</h2>
                     <form method="post" action="{% url 'login' %}">
                         {% csrf_token %}
-                        {{ form|crispy }}
                         <button type="submit" class="btn">Bejelentkezés</button>
                     </form>
                     <p>Nincs még fiókja? <a href="#" id="registerLink">Regisztráció</a></p>
