@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+
+{% block title %}Trello Kártyák{% endblock %}
+
+{% block content %}
+    <h2>Create Trello Card</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create Trello Card</button>
+    </form>
+{% endblock %}

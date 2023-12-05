@@ -1,7 +1,13 @@
 {% extends "main.html" %}
-
 {% block title %}Profil{% endblock %}
-
 {% block content %}
 <h1>Felhasználói profil</h1>
+    <p>Név: {{ request.user.last_name }} {{ request.user.first_name }}</p>
+    <p>Felhasználónév: {{ request.user.username }}</p>
+    <p>Email cím: {{ request.user.email }}</p>
+
+<a href="{% url 'change_data' %}"><button>Adatok módosítása</button></a>
+<a href="{% url 'change_password' %}"><button>Jelszó változtatása</button></a>
+
 {% endblock %}
+
