@@ -1,15 +1,17 @@
 from django.shortcuts import render, redirect
-from users.models import User
+from django.contrib.auth import authenticate, login
+from .forms import LoginForm
 
-def login(request):
+def user_login(request):
     if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        try:
-            user = User.objects.get(username=username, password=password)
-            return redirect('/index')
-        except User.DoesNotExist:
-            error_message = 'Hibás felhasználónév vagy jelszó.'
-            return render(request, 'login.html', {'error_message': error_message})
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('/index')
     else:
-        return render(request, 'login.html')
+        form = LoginForm()
+    return render(request, 'login.html', {'form': form})

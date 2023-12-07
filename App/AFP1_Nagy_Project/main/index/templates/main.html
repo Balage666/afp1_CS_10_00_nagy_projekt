@@ -1,61 +1,156 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Main{% endblock %}</title>
+
     <style>
         body {
+            background: url(https://cdn.discordapp.com/attachments/1162021079636775064/1179723993306103870/yes2.jpg?ex=657ad296&is=65685d96&hm=88f4584217d38d897b34148e6f57c560fda698ce6b01f8ca567d4a4afbf26f7a&);
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            overflow-x: hidden;
         }
 
         nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
             height: 50px;
-            background-color: #000;
-            color: #fff;
-            padding: 10px 0;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+            background: #1a1a1a;
+            color: white;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
         }
 
-        nav ul li a {
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        nav li {
+            margin-right: 10px;
+        }
+
+        nav a {
             text-decoration: none;
-            color: #fff;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a.logout {
+            background: #e44d26;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #333;
+        }
+
+        .logout:hover {
+            background: #b0351f;
         }
 
         main {
-            position: absolute;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            margin-left: 20px;
-            margin-right: 20px;
+            width: 100%;
+            display: flex;
+            padding: 20px;
+        }
+
+        main button {
+            background: #e44d26;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 300px;
+        }
+
+        main button:hover {
+            background: #b0351f;
         }
 
         footer {
+            background: rgba(26, 26, 26, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
             position: fixed;
             bottom: 0;
-            left: 0;
             width: 100%;
-            height: 50px;
-            background-color: #000;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
+            font-size: 14px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .logo::before,
+        .logo::after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background-color: #e44d26;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .logo::after {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+
+
+        .contentdiv {
+            float: left;
+            color: white;
+        }
+
+        .contentdiv h1{
+            font-size: 60px;
+            text-transform: uppercase;
+        }
+        .contentdiv p{
+            font-size: 22px;
+        }
+
+        .logodiv {
+            float: right;
+            margin-right: 80px;
+        }
+
+        .abstract-logo {
+            width: 600px;
+            height: 600px;
         }
     </style>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -64,16 +159,16 @@
             <li><a href="{% url 'trello_cards' %}">Trello Kártyák</a></li>
             <li><a href="{% url 'code' %}">Kód</a></li>
             <li><a href="{% url 'profile' %}">Profil</a></li>
-            <li><a href="/">Kijelentkezés</a></li>
+            <li style="margin-left: auto;"><a href="{% url 'logout_view' %}" class="logout">Kijelentkezés</a></li>
         </ul>
     </nav>
     <main>
         {% block content %}
-        
         {% endblock %}
     </main>
     <footer>
         <p>&copy; 2023 AFP1_Nagy_Project</p>
     </footer>
 </body>
+
 </html>
