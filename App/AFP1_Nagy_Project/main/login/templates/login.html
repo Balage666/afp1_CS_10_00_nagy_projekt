@@ -10,8 +10,8 @@
     <style>
                         body {
                 background-image: url('https://wallpapercave.com/wp/wp12183517.png');    
-                background-size: cover; /* Add this line to ensure full coverage */
-                background-position: center; /* Optional: Center the background image */
+                background-size: cover; 
+                background-position: center; 
                 background-repeat: no-repeat;
                 display: flex;
                 align-items: center;
@@ -87,28 +87,26 @@
         </style>
 	</head>
 
-	<body>
+<body>
 
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 login-container">
-					<div class="login-form">
-						<h2>Bejelentkezés</h2>
-						<form method="post">
-               {% csrf_token %}
-               {{ form.as_p }}
-							<button type="submit" class="btn">Bejelentkezés</button>
-						</form>
-						<p>Nincs még fiókja? <a href="{% url 'register' %}" id="registerLink">Regisztráció</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 login-container">
+                <div class="login-form">
+                    <h2>Bejelentkezés</h2>
+                    <form method="post" action="{% url 'login' %}">
+                        {% csrf_token %}
+                        {{ form }}
+                        <button type="submit" class="btn">Bejelentkezés</button>
+                    </form>
+                    <p>Nincs még fiókja? <a href="#" id="registerLink">Regisztráció</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-		<!-- Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
