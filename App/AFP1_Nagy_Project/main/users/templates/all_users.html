@@ -13,20 +13,20 @@
     <div class="users-container">
         <div class="row justify-content-center">
             <div>
-                <h2 ass="col-md-6 users-container">Felhasználók</h2>
+                <h2 ass="col-md-6 users-container" style="text-align: center;">Felhasználók</h2>
                 <div>
-                    <table>
-                        <thead>
+                    <table style="width: 100%;">
+                        <thead style="text-align: center;">
                             <tr>
-                                <th>Felhasználónév</th>
-                                <th>Jelszó</th>
+                                <th style="width: 200px;">Felhasználónév</th>
+                                <th style="width: 200px;">Jelszó</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody style="text-align: center;">
                             {% for user in users_list %}
                             <tr>
-                                <td>{{ user.username }}</td>
-                                <td>{{ user.password }}</td>
+                                <td style="width: 200px;">{{ user.username }}</td>
+                                <td style="width: 200px;">{{ user.password }}</td>
                             </tr>
                             {% endfor %}
                         </tbody>
@@ -42,8 +42,8 @@
         <style>
             body {
                 background-image: url('https://wallpapercave.com/wp/wp12183517.png');    
-                background-size: cover; /* Add this line to ensure full coverage */
-                background-position: center; /* Optional: Center the background image */
+                background-size: cover;
+                background-position: center;
                 background-repeat: no-repeat;
                 display: flex;
                 align-items: center;
@@ -54,7 +54,7 @@
             }
 
             .users-container {
-                background-color:   #171d20;    
+                background-color:   #4e4f4f;    
                 color: #FFE5B4;
                 padding: 30px;
                 border-radius: 15px; 
