@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trello</title>
+</head>
+<body>
+    <h2>Trello kártya készítés</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Kész</button>
+    </form>
+    <h4><a href="{% url 'trello_list' %}">Új lista létrehozása</a></h4>
+    <h4><a href="{% url 'trello_card_location' %}">Kártyák áthelyezése</a></h4>
+</body>
+</html>
