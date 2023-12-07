@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm
+from django.contrib import messages
 
 def user_login(request):
     if request.method == 'POST':
@@ -14,4 +15,8 @@ def user_login(request):
                 return redirect('/index')
     else:
         form = LoginForm()
+        if request.user.is_authenticated:
+            message = "A bejelentkezés felület nem elérhető bejelentkezett felhasználóknak!"
+            messages.info(request, message)
+            return redirect('/index')
     return render(request, 'login.html', {'form': form})

@@ -4,4 +4,15 @@
 
 {% block content %}
 <h1>Kód</h1>
+
+    {% if messages %}
+        {% for message in messages %}
+            <script>
+                window.onload = function() {
+                    alert("{{ message }}");
+                };
+            </script>
+        {% endfor %}
+    {% endif %}
+
 {% endblock %}

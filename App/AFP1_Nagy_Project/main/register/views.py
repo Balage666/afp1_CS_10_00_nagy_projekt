@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
 from .forms import SignUpForm
-
+from django.contrib import messages
 
 def register(request):
     if request.method == "POST":
@@ -11,4 +10,8 @@ def register(request):
             return redirect("/login")
     else:
         form = SignUpForm()
+        if request.user.is_authenticated:
+            message = "A regisztrációs felület nem elérhető bejelentkezett felhasználóknak!"
+            messages.info(request, message)
+            return redirect('/index')
     return render(request, "register.html", {"form": form})
