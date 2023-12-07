@@ -1,24 +1,68 @@
 <!DOCTYPE html>
-<html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="hu">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users in the database</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
 <body>
+    <div class="users-container">
+        <div class="row justify-content-center">
+            <div>
+                <h2 ass="col-md-6 users-container" style="text-align: center;">Felhasználók</h2>
+                <div>
+                    <table style="width: 100%;">
+                        <thead style="text-align: center;">
+                            <tr>
+                                <th style="width: 200px;">Felhasználónév</th>
+                                <th style="width: 200px;">Jelszó</th>
+                            </tr>
+                        </thead>
+                        <tbody style="text-align: center;">
+                            {% for user in users_list %}
+                            <tr>
+                                <td style="width: 200px;">{{ user.username }}</td>
+                                <td style="width: 200px;">{{ user.password }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<h1>Users in the database</h1>
-<table border="1">
-    <thead>
-        <tr>
-            <th>Username</th>
-            <th>Password</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for user in users_list %}
-        <tr>
-            <td>{{ user.username }}</td>
-            <td>{{ user.password }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+        <style>
+            body {
+                background-image: url('https://wallpapercave.com/wp/wp12183517.png');    
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .users-container {
+                background-color:   #4e4f4f;    
+                color: #FFE5B4;
+                padding: 30px;
+                border-radius: 15px; 
+                border: solid black;
+                overflow: hidden; 
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+            }
+        </style>
 
 </body>
 </html>
