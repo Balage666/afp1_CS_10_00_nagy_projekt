@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Trello</title>
-</head>
-<body>
+{% extends "main.html" %}
+{% block title %}Trello kártya mozgatás{% endblock %}
+{% block content %}
     <h2>Trelló kártya áthelyezés</h2>
     <form method="post" action="{% url 'trello_card_location' %}">
         {% csrf_token %}
@@ -12,5 +9,4 @@
     </form>
     <h4><a href="{% url 'trello' %}">Új kártya készítés</a></h4>
     <h4><a href="{% url 'trello_list' %}">Új lista készítés</a></h4>
-</body>
-</html>
+{% endblock %}

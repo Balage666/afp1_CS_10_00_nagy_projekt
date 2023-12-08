@@ -34,6 +34,7 @@ def logout_view(request):
     logout(request)
     return redirect('login')
 
+@login_required(redirect_field_name="bejelentkezes_szukseges")
 def create_trello_card(request):
     form = TrelloCardForm()
     if request.method == 'POST':
@@ -93,7 +94,8 @@ def get_trello_cards(board_id, api_key, api_token):
         return choices_cards
     else:
         return []
-
+    
+@login_required(redirect_field_name="bejelentkezes_szukseges")
 def move_cards(request):
     form = ChangeCardLocationForm()
     if request.method == 'GET':
@@ -119,6 +121,7 @@ def move_cards(request):
         else:
             return render(request, 'trello_card_location.html', {'form3': form, 'lists': lists, 'cards': cards})
         
+@login_required(redirect_field_name="bejelentkezes_szukseges")       
 def create_trello_list(request):
     form2 = CreateListForm()  
 
