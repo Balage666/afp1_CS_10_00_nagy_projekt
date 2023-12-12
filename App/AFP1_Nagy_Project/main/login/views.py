@@ -13,6 +13,12 @@ def user_login(request):
             if user is not None:
                 login(request, user)
                 return redirect('/index')
+            else:
+                messages.error(request, 'Hibás felhasználónév vagy jelszó!')
+                return redirect('/login')
+        else:
+            messages.error(request, 'Hibás adatok!')
+            return redirect('/login')
     else:
         form = LoginForm()
         if request.user.is_authenticated:
