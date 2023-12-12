@@ -25,4 +25,5 @@ urlpatterns = [
     path('', include('login.urls')),
     path('', RedirectView.as_view(url='/login/')),
     path('admin/', admin.site.urls),
+    path('', include('GPTapi.urls')),
 ]

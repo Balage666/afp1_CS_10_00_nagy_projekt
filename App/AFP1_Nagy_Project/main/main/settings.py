@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'index',
     'register',
     'login',
+    'GPTapi'
 ]
 
 MIDDLEWARE = [

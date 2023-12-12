@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
 <body>
-    <form action="/submit_data/" method="post">
+    <br>
+    <form method="post">
+        {% csrf_token %}
     <label for="user_input">Enter Data:</label>
-    <input type="text" id="user_input" name="user_input" required>
+    <input style="background-color: cadetblue;" type="text" id="user_input" name="user_input" required>
     <br><br>
-    <input type="submit" value="Submit">
+    <button type="submit" style="background-color: lightblue;margin-left: 10px;padding: 2px;"value="Submit">Send</button>
     </form>
+    <br>
+    <p>Response:</p>
+{% if response%}
+    <div style="background-color: cadetblue;margin: 15px;">
+        {{ response|safe}}
+    </div>
+{% endif %}
+
 </body>
 </html>
