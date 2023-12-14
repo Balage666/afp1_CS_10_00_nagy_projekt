@@ -45,20 +45,6 @@
 | __PJ_t019__         | __"Felhasználók" gomb__ kezelése a navbaron                         | A gomb elvisz a "users" oldalra.                                               | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
 | __PJ_t020__         | __"Visszatérés a főoldalra!" gomb__ kezelése a felhasználók oldalon | A gomb visszavisszavisz a főoldalra.                                           | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
 
-### Funkciók tesztelése:
-
-**Tesztelő:** Pál József Gergő
-
-**Tesztelés dátuma:** 2023.12.13
-
-| Teszteset azonosító | Teszteset | Elvárt eredmény | Tényleges eredmény | Megjegyzés |
-| ------------------- | --------- | --------------- | ------------------ | ---------- |
-
-### Profilok megtekintésének tesztelése:
-**Tesztelő:** Pál József Gergő
-
-**Tesztelés dátuma:** 2023.12.13
-
 | Teszteset azonosító | Teszteset                                | Elvárt eredmény                                                                                                                                                                                   | Tényleges eredmény                              | Megjegyzés                         |
 | ------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ---------------------------------- |
 | __PJ_t021__         | A __felhasználók megtekintése__ funkció: | A **"Felhasználók"** gombra kattintva az ADMIN jogosultsággal rendelkező felhasználó átirányítódik a "Felhasználók" oldalra, ahol megjelenik az össszes felhasználó adata (a jelszó kivételével). | Ugyanaz, mint az Elvárt eredmény szekcióban.    | Nem találtam hibára utaló jeleket. |
