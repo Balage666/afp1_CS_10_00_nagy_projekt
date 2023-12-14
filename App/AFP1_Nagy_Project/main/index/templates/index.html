@@ -19,4 +19,13 @@
             <line x1="10" y1="100" x2="190" y2="100" stroke="#e44d26" stroke-width="4" />
         </svg>
     </div>
+    {% if messages %}
+        {% for message in messages %}
+            <script>
+                window.onload = function() {
+                    alert("{{ message }}");
+                };
+            </script>
+        {% endfor %}
+    {% endif %}
 {% endblock %}
