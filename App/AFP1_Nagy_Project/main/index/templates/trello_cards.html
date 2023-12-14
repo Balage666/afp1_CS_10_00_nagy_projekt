@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+
+{% block title %}Trello Kártyák{% endblock %}
+
+{% block content %}
+<h1>Trelló kártyák</h1>
+    {% if messages %}
+        {% for message in messages %}
+            <script>
+                window.onload = function() {
+                    alert("{{ message }}");
+                };
+            </script>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
