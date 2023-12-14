@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% block title %}Trello lista létrehozás{% endblock %}
+{% block content %}
+    <h2>Új trello lista készítés</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form2.as_p }}
+        <button type="submit">Kész</button>
+    </form>
+    <h4><a href="{% url 'trello' %}">Új kártya létrehozása</a></h4>
+    <h4><a href="{% url 'trello_card_location' %}">Kártyák áthelyezése</a></h4>
+{% endblock %}
