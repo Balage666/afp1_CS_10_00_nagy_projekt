@@ -1,0 +1,53 @@
+### Bejelentkezés / regisztráció tesztelése:
+
+**Tesztelő:** Pál József Gergő
+
+**Tesztelés dátuma:** 2023.12.13
+
+| Teszteset azonosító | Teszteset                                                    | Elvárt eredmény                                                                                                                                                                                                                            | Tényleges eredmény                                                                                       | Megjegyzés                         |
+| ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| __PJ_t001__         | Bejelentkezés __mezők kitöltése nélkül__:                    | Az oldal jelzi, hogy nem adtunk meg adatot.                                                                                                                                                                                                | Ugyanaz, mint az Elvárt eredmény szekcióban.                                                             | Nem találtam hibára utaló jeleket. |
+| __PJ_t002__         | Regisztráció __adatok megadása nélkül__:                     | A rendszer felhívja a figyelmet, hogy **minden adatot meg kell adni.**                                                                                                                                                                     | Ugyanaz, mint az Elvárt eredmény szekcióban.                                                             | Nem találtam hibára utaló jeleket. |
+| __PJ_t003__         | __Sikeretelen regisztráció__:                                | Sikertelen regisztráció esetén hibaüzenet jelez a felhasználónak.                                                                                                                                                                          | Ha a jelszó és annak megerősítése nem egyezik, a regisztráció sikertelenségéről hibaüzenetet nem kapunk. | Javítani szükséges.                |
+| __PJ_t004__         | Bejelentkezés __hibás adatokkal__:                           | Hibás adatok megadása esetén a **a belépést a rendszer megtagadja.** a hibás adatok hibaüzenet megjelenítésével                                                                                                                            | Ugyanaz, mint az Elvárt eredmény szekcióban.                                                             | Nem találtam hibára utaló jeleket. |
+| __PJ_t005__         | Regisztárciónál használt __jelszó erősségének ellenőrzése__: | 8 karakternél kisebb jelszó használatakor **a rendszer a regisztrációt megtagadja.** vagy ha nem tartalmaz nagybetűt illetve számot                                                                                                        | Ugyanaz, mint az Elvárt eredmény szekcióban.                                                             | Nem találtam hibára utaló jeleket. |
+| __PJ_t006__         | Sikeres bejelentkezés                                        | Sikeres bejelentkezést követően **a rendszer a főoldalra navigálja a felhasználót** és már képes lesz belépni az oldalra, megtekinteni a funkciókat                                                                                        | Ugyanaz, mint az Elvárt eredmény szekcióban.                                                             | Nem találtam hibára utaló jeleket. |
+| __PJ_t007__         | Bejelentkezés nélküli belépés az oldalra                     | Ha nincs a felhasználó bejelentkezve, **a rendszer a bejelentkezési oldalra navigálja a felhasználót**, bármilyen URL-t beírva mindig a bejelentkezési oldal jelenik meg addig, amíg be nem jelentkezik. A hibaüzenet is megjelenik mellé. | Ugyanaz, mint az Elvárt eredmény szekcióban.                                                             | Nem találtam hibára utaló jeleket. |
+| __PJ_t008__         | Az admin és a sima user szétválasztása                       | A rendszer **megkülönbözteti a két jogosultágot**                                                                                                                                                                                          | Ugyanaz, mint az Elvárt eredmény szekcióban.                                                             | Nem találtam hibára utaló jeleket. |
+
+### Kijelentkezés tesztelése:
+
+**Tesztelő:** Pál József Gergő
+
+**Tesztelés dátuma:** 2023.12.13
+
+| Teszteset azonosító | Teszteset                                 | Elvárt eredmény                                                                                                          | Tényleges eredmény                           | Megjegyzés                         |
+| ------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- | ---------------------------------- |
+| __PJ_t009__         | Kijelentezési __gomb-ra való kattintás__: | Az oldal sikeresen **kijelentkezteti a felhasználót egy üzenettel jelezve** azt és átnavigálja a bejelentkezési oldalra. | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
+| __PJ_t010__         | Kijelentezés __után__:                    | Bármilyen URL-t beírva **a felhasználónak csak a bejelentkezési oldal jelenik meg**, hiszen sikeresen kijelentkezett.    | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
+| __PJ_t011__         | Kijelentezés után __újra bejelentkezés__: | **A felhasználó újra be tud lépni**, és újra eléri az oldal funkcióit.                                                   | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
+| __PJ_t012__         | Kijelentezés __után__:                    | Bármilyen URL-t beírva **a felhasználónak csak a bejelentkezési oldal jelenik meg**, hiszen sikeresen kijelentkezett.    | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
+
+### Navigálás tesztelése:
+
+**Tesztelő:** Pál József Gergő
+
+**Tesztelés dátuma:** 2023.12.13
+
+| Teszteset azonosító | Teszteset                                                           | Elvárt eredmény                                                                | Tényleges eredmény                           | Megjegyzés                         |
+| ------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------- | ---------------------------------- |
+| __PJ_t013__         | __"Kezdj bele" gomb__ kezelése a főoldalon                          | A gomb átirányít arra az oldalra, ahol lehetőségünk lesz elkezdeni a 'munkát'. | A gomb nem visz sehova.                      | Javítani szükséges.                |
+| __PJ_t014__         | __"Főoldal" gomb__ kezelése a navbaron                              | A gomb elvisz a főoldalra.                                                     | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
+| __PJ_t015__         | __"Dokumentáció" gomb__ kezelése a navbaron                         | A gomb elvisz a "documentation" oldalra.                                       | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
+| __PJ_t016__         | __"Trello kártyák" gomb__ kezelése a navbaron                       | A gomb elvisz a "trello_cards" oldalra.                                        | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
+| __PJ_t017__         | __"Kód gomb__ kezelése a navbaron                                   | A gomb elvisz a code oldalra.                                                  | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
+| __PJ_t018__         | __"Profilom" gomb__ kezelése a navbaron                             | A gomb elvisz a trello_cards oldalra.                                          | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
+| __PJ_t019__         | __"Felhasználók" gomb__ kezelése a navbaron                         | A gomb elvisz a "users" oldalra.                                               | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
+| __PJ_t020__         | __"Visszatérés a főoldalra!" gomb__ kezelése a felhasználók oldalon | A gomb visszavisszavisz a főoldalra.                                           | Ugyanaz, mint az Elvárt eredmény szekcióban. | Nem találtam hibára utaló jeleket. |
+
+| Teszteset azonosító | Teszteset                                | Elvárt eredmény                                                                                                                                                                                   | Tényleges eredmény                              | Megjegyzés                         |
+| ------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ---------------------------------- |
+| __PJ_t021__         | A __felhasználók megtekintése__ funkció: | A **"Felhasználók"** gombra kattintva az ADMIN jogosultsággal rendelkező felhasználó átirányítódik a "Felhasználók" oldalra, ahol megjelenik az össszes felhasználó adata (a jelszó kivételével). | Ugyanaz, mint az Elvárt eredmény szekcióban.    | Nem találtam hibára utaló jeleket. |
+| __PJ_t022__         | A __felhasználók__ oldal címsora         | A **"Felhasználók"** oldal címsora helyesen tükrözi az oldal tartalmát, magyarul.                                                                                                                 | A címsorban: 'Users in the database' található. | Javítani szükséges.                |
+
+
